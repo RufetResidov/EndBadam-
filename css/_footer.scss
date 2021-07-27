@@ -1,0 +1,113 @@
+#footer {
+    border-top: 1px dotted #007a58;
+    padding-top: 5rem;
+    background: #fff;
+
+    .logo-title {
+        img {
+            width: 110px;
+        }
+        span{
+            font-weight: 500;
+        }
+    }
+
+    .social {
+        i {
+            font-size: 18px;
+            background-color: #fff;
+            border-radius: 30px;
+            padding: 10px;
+            margin-left: 5px;
+            color: #007a58;
+            box-shadow: 0 0 15px rgba(24, 24, 24, 0.3);
+            transition: 0.4s ease-in-out;
+
+            &:hover {
+                background-color: #007a58;
+                color: #fff;
+            }
+        }
+    }
+
+    .contact {
+        h1 {
+            font-size: 24px;
+            color: #39404a;
+            margin-bottom: 25px;
+        }
+
+        ul {
+            padding: 0;
+
+            li {
+                margin-bottom: 18px;
+                display: flex;
+                list-style-type: none;
+                align-items: center;
+
+                i {
+                    margin-right: 15px;
+                    font-size: 30px;
+                    color: #007a58;
+                }
+
+                p {
+                    margin: 0;
+
+                    span {
+                        display: block;
+                        color: #555;
+                    }
+                }
+            }
+        }
+    }
+
+    .quick-link {
+        h1 {
+            font-size: 24px;
+            color: #39404a;
+            margin-bottom: 25px;
+        }
+
+        a {
+            display: block;
+            color: #555;
+            font-weight: 500;
+            transition: 0.4s ease-in-out;
+
+            &:hover {
+                color: #007a58;
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .footer-bottom {
+        margin-top: 75px;
+        padding: 30px 50px;
+        border-radius: 8px 8px 0px 0px;
+        background: #007a58;
+
+        .footer-copytext {
+            font-size: 18px;
+            font-weight: 500;
+            color: #fff;
+
+            a {
+                color: #fff;
+                opacity: .7;
+            }
+        }
+
+        .footer-card {
+            text-align: end;
+
+            a img {
+                width: 50px;
+                border-radius: 3px;
+            }
+        }
+    }
+}

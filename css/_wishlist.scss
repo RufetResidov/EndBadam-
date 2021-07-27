@@ -1,0 +1,31 @@
+.wishlist-part {
+    padding: 4rem 0;
+    .table-scroll {
+        .table-list {
+            width: 100%;
+            text-align: center;
+            thead {
+                background-color: #007a58;
+                th {
+                    color: #fff;
+                    border: 2px solid #000;
+                    padding: 1rem;
+                }
+            }
+
+            tbody {
+                background-color: blue;
+                .table-image{
+                    padding: 0;
+                    img{
+                        width: 100px;
+                    }
+                }
+                td {
+                    padding: 10px;
+                    border: 2px solid #000;
+                }
+            }
+        }
+    }
+}

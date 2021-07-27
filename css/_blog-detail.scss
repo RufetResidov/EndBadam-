@@ -1,0 +1,239 @@
+#single-blog-detail {
+    text-align: center;
+    width: 100%;
+    padding: 8rem 0;
+    background-image: url(..//photo/contactback.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    h1 {
+        margin-top: 0;
+        margin-bottom: 10px;
+        font-size: 60px;
+        color: #007a58;
+        font-weight: 500;
+        text-align: center;
+    }
+
+    .breadcrumb {
+        display: flex;
+        justify-content: center;
+
+        a {
+            position: relative;
+
+            &::after {
+                font-family: "Font Awesome 5 Free";
+                content: "\f105";
+                font-weight: 600;
+                font-size: 14px;
+                margin: 0 5px;
+            }
+        }
+
+        span,
+        a {
+            display: inline-block;
+            font-weight: 600;
+            color: #007a58;
+            font-size: 1.2rem;
+            transition: 0.4s ease-in-out;
+
+            &:hover {
+                opacity: 0.7;
+                transform: translateY(-10px);
+            }
+        }
+    }
+}
+
+#blog-details {
+    padding: 2rem 0;
+
+    .blogCard {
+        padding-bottom: 1rem;
+        .thumb {
+            border-top-left-radius: 10px;
+            overflow: hidden;
+            position: relative;
+
+            img {
+                object-fit: cover;
+                width: 100%;
+                height: 400px;
+                object-fit: cover;
+            }
+        }
+
+        .content {
+            border-bottom-right-radius: 10px;
+            background-color: #F5F6F7;
+            padding: 1rem;
+            text-align: start;
+            border-top: none !important;
+            border: 2px solid #007a58;
+
+            h2 {
+                color: #000;
+                font-size: 2rem;
+            }
+
+            p {
+                color: #1f481a;
+                font-weight: 500;
+                font-size: 1.1rem;
+            }
+
+            span {
+                color: #007a58;
+                font-weight: 600;
+                font-size: 1.1rem;
+            }
+
+            h6 {
+                margin: 10px;
+                display: inline-block;
+                color: #ff7004;
+                font-weight: 600;
+                font-size: 1.1rem;
+            }
+        }
+    }
+
+    .blog-widget {
+        margin-bottom: 30px;
+        margin-left: 5px;
+        border-radius: 8px;
+        padding: 18px 25px 25px;
+        background: #F5F6F7;
+
+        .blog-widget-title {
+            padding-bottom: 16px;
+            margin-bottom: 20px;
+            position: relative;
+            text-transform: capitalize;
+            border-bottom: 2px solid #ff7004;
+
+            &::after {
+                position: absolute;
+                content: "";
+                bottom: -2px;
+                left: 0px;
+                width: 50px;
+                height: 2px;
+                background: #007a58;
+                z-index: 232;
+            }
+        }
+    }
+
+    .blog-widget-feed {
+        li {
+            display: flex;
+            margin-bottom: 25px;
+            padding-bottom: 5px;
+            border-bottom: 2px solid #007a58;
+            align-items: unset;
+            color: #000;
+            transition: .4s ease-in-out;
+
+            p {
+                font-weight: 500;
+                transition: .4s;
+
+                &:hover {
+                    color: #ff7004;
+                }
+            }
+
+            h6 {
+                a {
+                    color: #007a58;
+
+                    &:hover {
+                        color: #000;
+                    }
+                }
+            }
+        }
+
+        .blog-widget-media {
+            img {
+                border-radius: 10px;
+                margin-right: 10px;
+                width: 100px;
+            }
+        }
+    }
+
+    .blog-widget-category {
+        li {
+            margin-bottom: 15px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #007a58;
+
+            a {
+                font-weight: 500;
+                transition: .4s;
+
+                &:hover {
+                    color: #007a58;
+                }
+
+                span {
+                    font-size: 14px;
+                    float: right;
+                    width: 30px;
+                    height: 30px;
+                    line-height: 32px;
+                    text-align: center;
+                    border-radius: 50%;
+                    color: #fff;
+                    background: #007a58;
+                }
+            }
+        }
+    }
+
+    .blog-widget-social {
+        li {
+            display: inline-block;
+            margin: 5px;
+
+            a {
+                i {
+                    padding: 10px;
+                    font-size: 18px;
+                    text-align: center;
+                    border-radius: 3px;
+                    color: #fff;
+                    background: #007a58;
+                }
+            }
+        }
+    }
+}
+
+#deliveryinfoBlog {
+    background-color: #F5F6F7;
+    padding: 2rem;
+    background-image: url(../photo/tea-home-new-gray-211d0.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+    .box {
+        padding: 5px;
+
+        i {
+            font-size: 4rem;
+            color: #007a58;
+        }
+    }
+
+    .text {
+        text-align: center;
+    }
+}

@@ -1,0 +1,130 @@
+@media(max-width:576px) {
+    #blog-details {
+        .blogCard {
+            .content {
+                h4 {
+                    font-size: 14px;
+                }
+
+                p {
+                    font-size: 14px;
+                }
+            }
+        }
+
+        .bottom-paginate {
+            margin-bottom: 30px;
+            flex-direction: column;
+        }
+    }
+
+    #footer {
+        .footer-bottom {
+            .footer-copytext {
+                font-size: 16px !important;
+            }
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    #header {
+        display: none;
+    }
+
+    .slider {
+        .slider-text {
+            left: 50% !important;
+
+            p {
+                font-size: 16px !important;
+                font-weight: 500 !important;
+            }
+        }
+    }
+
+    #headerUp {
+        display: none;
+    }
+
+    .offeryou {
+        .offerbox:nth-child(2) {
+            margin: 7rem 0;
+        }
+    }
+
+    #topProduct {
+        .topProductCategory {
+            ul {
+                justify-content: space-between;
+
+                li {
+                    margin: auto 1.2rem;
+
+                    a {
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+
+        .tab-content {
+            .product {
+                .thumb {
+                    img {
+                        height: 200px;
+                    }
+
+                    .badges {
+                        span {
+                            margin-bottom: 5px !important;
+                        }
+                    }
+                }
+
+                .content {
+                    height: 100px;
+                }
+            }
+        }
+    }
+
+    .shop-category-area {
+        .shop-top-bar {
+            p {
+                font-size: 14px;
+            }
+        }
+    }
+
+    #footer {
+        .footer-bottom {
+            .footer-copytext {
+                font-size: 20px;
+            }
+
+            .footer-card {
+                text-align: center;
+                a{
+                    img{
+                        width: 40px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) and(max-width:1260px) {
+    #topProduct {
+        .tab-content {
+            .product {
+                .thumb {
+                    img {
+                        height: 220px;
+                    }
+                }
+            }
+        }
+    }
+}
