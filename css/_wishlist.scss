@@ -1,31 +1,163 @@
 .wishlist-part {
     padding: 4rem 0;
-    .table-scroll {
-        .table-list {
-            width: 100%;
-            text-align: center;
-            thead {
-                background-color: #007a58;
-                th {
-                    color: #fff;
-                    border: 2px solid #000;
-                    padding: 1rem;
-                }
+    .btn-wishlist{
+        margin-top: 2rem;
+    }
+    table {
+        border: 1px solid #ccc;
+        border-collapse: collapse;
+        padding: 2rem 0;
+        width: 100%;
+        table-layout: fixed;
+
+        img {
+            width: 100px;
+        }
+
+        .table-input {
+            .input1 {
+                width: 120px;
+                outline: none;
+                padding: 0.375rem 0.75rem;
+                font-size: 1rem;
+                font-weight: 400;
+                line-height: 1.5;
+                color: #212529;
+                background-color: #fff;
+                background-clip: padding-box;
+                border: 1px solid #ced4da;
             }
 
-            tbody {
-                background-color: blue;
-                .table-image{
-                    padding: 0;
-                    img{
-                        width: 100px;
-                    }
-                }
-                td {
-                    padding: 10px;
-                    border: 2px solid #000;
+        }
+
+        .icon-table {
+            a {
+                i {
+                    background-color: #007a58;
+                    width: 35px;
+                    height: 35px;
+                    font-size: 16px;
+                    line-height: 35px;
+                    text-align: center;
+                    display: inline-block;
+                    border-radius: 5px;
+                    margin: 3px;
+                    color: #fff;
                 }
             }
+        }
+    }
+
+    table caption {
+        font-size: 1.5em;
+        margin: .5em 0 .75em;
+    }
+
+    table tr {
+        background-color: #fff;
+        border: 1px solid #e1e5e9;
+        padding: .35em;
+        border-radius: 3px;
+    }
+
+    table thead tr:first-child {
+        border: 1px solid #007a58;
+    }
+
+    table th,
+
+    table td {
+        margin: 10px 0;
+        padding: 1.2rem;
+        text-align: center;
+        color: #555;
+        font-size: 14px;
+        font-weight: 500;
+        border-right: 1px solid #fff;
+    }
+
+    table td:nth-child(4) {
+        font-size: 14px;
+    }
+
+    table th {
+        font-size: .85em;
+        letter-spacing: .1em;
+        background: #007a58;
+        color: #FFF;
+    }
+
+
+
+    tbody tr:nth-child(even) {
+        background-color: #eee;
+    }
+
+    tbody tr:nth-child(odd) {
+        background-color: #fff;
+    }
+
+    @media screen and (max-width: 992px) {
+
+        .first-table {
+            margin-top: 20px;
+        }
+
+        table {
+            border: 0;
+
+            img {
+                width: 100px;
+            }
+        }
+
+        table caption {
+            font-size: 1.3em;
+        }
+
+        table thead {
+            border: none;
+            clip: rect(0 0 0 0);
+            height: 1px;
+            margin: -1px;
+            overflow: hidden;
+            position: absolute;
+            width: 1px;
+            padding: 0;
+        }
+
+        table tr {
+            border-bottom: 3px solid #e1e5e9;
+            display: block;
+            margin-bottom: .625em;
+        }
+
+        table th,
+        table td {
+            padding: 0.625em;
+        }
+
+        table td {
+            border-bottom: 1px solid #e1e5e9;
+            display: block;
+            font-size: .9em;
+            text-align: right;
+            color: #007a58;
+        }
+
+        table td::before {
+            content: attr(data-label);
+            float: left;
+            font-weight: bold;
+            color: #656971;
+        }
+
+        table td:last-child {
+            border-bottom: 0;
+        }
+
+        table td:nth-child(4) {
+            font-size: 0.8em;
         }
     }
 }

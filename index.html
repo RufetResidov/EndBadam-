@@ -17,44 +17,61 @@
 </head>
 
 <body>
+
     <!-- StartScrollUp -->
     <a id="scrollUp"></a>
     <!-- EndScrollUp -->
+    <!----------------------------------->
+
+    <!-- HeaderUpStart -->
     <div id="headerUp">
-        <div class="row align-items-center justify-content-between">
-            <div class="col-lg-5">
-                <ul class="social-icon">
-                    <span style="font-size: 1.4rem;color:#fff;">Bizi izlə </span>
-                    <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                    <li><a href="#"><i class="fab fa-telegram"></i></a></li>
-                    <li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
-                </ul>
-            </div>
-            <div class="col-lg-5">
-                <div class="icon">
-                    <div class="search-box">
-                        <input class="search-input" type="text" name="" placeholder="Search Product">
-                        <a href="#" class="search-btn">
-                            <i class="fas fa-search"></i>
+        <div class="container-fluid">
+            <div class="d-flex">
+                <div class="col-lg-7">
+                    <ul class="d-flex social-icon">
+                        <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fab fa-telegram"></i></a></li>
+                        <li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-5 text-end">
+                    <div class="icon">
+                        <div class="search-box d-flex">
+                            <input class="search-input" type="text" name="" placeholder="Məhsul axtar">
+                            <a href="#" class="search-btn">
+                                <i class="fas fa-search"></i>
+                            </a>
+                        </div>
+
+                        <a class="heart" href="wishlist.html">
+                            <i class="fas fa-heart">
+                                <sup>10</sup>
+                            </i>
                         </a>
+                        <a class="shop-icon" href="#">
+                            <i class="fas fa-shopping-basket shop-basket">
+                                <sup>100</sup>
+                            </i>
+                        </a>
+                        <div class="dropdownUser">
+                            <button class="btn  dropdown-toggle" type="button" id="dropdownMenuButton1"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <a href=""><i class="fas fa-user"></i></a>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="login.html">Daxil ol</a></li>
+
+                                <li><a class="dropdown-item" href="register.html">Hesab yarat</a></li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="dropdownUser">
-                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            <a href=""><i class="fas fa-user"></i></a>
-                        </button>
-                        <ul style="background-color:green;" class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                            <li ><a style="color: #000;" class="dropdown-item" href="login.html">Daxil ol</a></li>
-                            <li ><a style="color: #000;" class="dropdown-item" href="register.html">Hesab yarat</a></li>
-                        </ul>
-                    </div>
-                    <a href="wishlist.html"><i class="fas fa-heart"></i></a>
-                    <a href=""><i class="fas fa-shopping-basket"></i></a>
                 </div>
             </div>
         </div>
     </div>
+    <!--HeaderUpEnd -->
+
     <!-- ==========================================
         Header Start
     =============================================== -->
@@ -111,6 +128,66 @@
     =================================================== -->
 
     <!----------------------------------->
+    <section id="mobileUp">
+        <div class="container">
+            <div class="d-flex align-items-center justify-content-between">
+                <div class="col-6">
+                    <div class="left">
+                        <img src="photo/Logo.svg" alt="">
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="right">
+                        <div class="search-box d-flex">
+                            <input class="search-input" type="text" name="" placeholder="Məhsul axtar">
+                            <a href="#" class="search-btn">
+                                <i class="fas fa-search"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Mobile-header Start -->
+    <section id="mobile-header">
+        <div class="container-fluid">
+            <div class="d-flex justify-content-around align-items-center">
+
+                <div class="col-lg-2">
+                    <a href="login.html" title="Login"><i class="fas fa-user"></i><span>Hesab</span></a>
+                </div>
+
+                <div class="col-lg-2">
+                    <button class="cart-btn" title="Cartlist"><i
+                            class="fas fa-shopping-basket"><sup>900</sup></i><span>Səbət</span></button>
+                </div>
+                <div class="col-lg-2">
+                    <a href="wishlist.html" title="Wishlist"><i
+                            class="fas fa-heart"><sup>0</sup></i><span>Bəyənilənlər</span></a>
+                </div>
+                <div class="col-lg-2 ">
+                    <button class="cate-btn" title="Category List"><i class="fas fa-list"></i><span>Menu</span></button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Mobile-header End -->
+    <!----------------------------------->
+    <!-- SualllVerilecekkBurasi -->
+    <!-- <div class="mobile-nav">
+        <img src="photo/Logo.svg " alt="">
+        <ul>
+            <li><a href="#">Ana Səhifə</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Haqqımızda</a></li>
+            <li><a href="#">Əlaqə</a></li>
+            <li><a href="#">Məhsullar</a></li>
+            <li><a href="#">Satış</a></li>
+        </ul>
+    </div> -->
     <!-- Start Slider -->
     <div class="slider ">
         <div class="image-slider">
@@ -202,7 +279,6 @@
     <!-- End OfferYou -->
     <!----------------------------------->
 
-    <!----------------------------------->
     <!-- Start Top Product -->
     <section id="topProduct">
         <div class="container">
@@ -463,6 +539,8 @@
         </div>
     </section>
     <!-- End Top Product -->
+    <!----------------------------------->
+
     <!-- Start Top Duration -->
     <section id="duration">
         <div class="container ">
@@ -510,7 +588,6 @@
     <!-- End Top Duration -->
     <!----------------------------------->
 
-    <!----------------------------------->
     <!-- Start newProduct -->
     <section id="newProduct">
         <div class="container">
@@ -681,6 +758,7 @@
     </section>
     <!-- End newProduct -->
     <!----------------------------------->
+
     <!-- Start Blog -->
     <section id="blog">
         <div class="container">
@@ -755,6 +833,8 @@
         </div>
     </section>
     <!-- End Blog -->
+    <!----------------------------------->
+
     <!-- Start DeliveryInfo -->
     <section id="deliveryinfo">
         <div class="container ">
@@ -799,9 +879,9 @@
         </div>
     </section>
     <!-- End DeliveryInfo -->
-    <!-- ==========================================
-        Footer Start
-    =============================================== -->
+    <!----------------------------------->
+
+    <!-- Footer Start -->
     <footer id="footer">
         <div class="container">
             <div class="row">
@@ -883,9 +963,8 @@
             </div>
         </div>
     </footer>
-    <!-- ==========================================
-        Footer End
-    =================================================== -->
+    <!-- Footer End -->
+
     <script src="javascript/jquery.js"></script>
     <script src="javascript/bootstrap.bundle.js"></script>
     <script src="slick/slick.js"></script>

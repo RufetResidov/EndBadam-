@@ -1,8 +1,9 @@
+// <!-- Start Single-Contact -->
 #single-contact {
     text-align: center;
     width: 100%;
     padding: 8rem 0;
-    background-image: url(..//photo/contactback.jpg);
+    background-image: url(..//photo/process-parallaxx.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -11,7 +12,7 @@
         margin-top: 0;
         margin-bottom: 10px;
         font-size: 60px;
-        color: #007a58;
+        color: #fff;
         font-weight: 500;
         text-align: center;
     }
@@ -36,7 +37,7 @@
         a {
             display: inline-block;
             font-weight: 600;
-            color: #007a58;
+            color: #fff;
             font-size: 1.2rem;
             transition: 0.4s ease-in-out;
 
@@ -48,6 +49,7 @@
     }
 }
 
+//<!-- Start Social-Contact -->
 #social-contact {
     background-color: #f5f5f5;
     padding: 5rem 0;
@@ -117,6 +119,39 @@
     }
 }
 
+//<!-- Start DeliveryInfo -->
+#deliveryinfoContact {
+    background-color: #fff;
+    padding: 2rem;
+    margin-top: -6px;
+
+    .box {
+        padding: 10px;
+
+        i {
+            font-size: 3rem;
+            color: #007a58;
+        }
+
+        p {
+            margin: 0;
+            color: #007a58;
+            font-weight: 500;
+        }
+
+        h4 {
+            margin: 5px 0px 0px 0px;
+            font-size: 1.5rem;
+            font-weight: 500;
+        }
+    }
+
+    .text {
+        text-align: center;
+    }
+}
+
+//<!-- Start Contact-message -->
 #contact-message {
     background-attachment: fixed;
     background-image: url(..//photo/banner-4.jpg);
@@ -126,7 +161,7 @@
         padding: 30px;
         box-shadow: 1px 1px 9px 0px;
         margin: 0px 2.5px 30px;
-        border-radius: 8px;
+        border-radius: 10px;
         background: #fff;
 
         iframe {
@@ -211,54 +246,25 @@
     }
 }
 
-/*DeliveryInfo*/
-#deliveryinfoContact {
-    background-color: #fff;
-    padding: 2rem;
-    margin-top: -6px;
-
-    .box {
-        padding: 5px;
-
-        i {
-            font-size: 4rem;
-            color: #007a58;
-        }
-    }
-
-    .text {
-        text-align: center;
-    }
-}
-
-/*DeliveryInfo*/
+//<!-- Start subscribe-contact -->
 #subscribe-contact {
     width: 100%;
-    background-attachment: fixed;
     position: relative;
     padding: 3rem 0;
-    background-image: url(/photo/slider2.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-image: linear-gradient(147deg, #1d5c25 66%, #2b4c34 100%);
 
     .news-form {
         z-index: 2;
-        position: relative;
         width: 100%;
         padding: 10px 20px;
         border-radius: 12px;
         background-color: #fff;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
 
         button {
-            right: 10px;
-            position: absolute;
+            float: right;
             background-color: #007a58;
             color: #fff;
-            width: 160px;
+            width: 180px;
             font-size: 14px;
             font-weight: 500;
             padding: 12px 0px;

@@ -42,7 +42,7 @@
 
             &:hover {
                 opacity: 0.7;
-                transform: translateY(-10px);
+                transform: translateY(-5px);
             }
         }
     }
@@ -74,7 +74,10 @@
         }
 
         .all {
+
             .box {
+                text-align: center;
+
                 h3 {
                     font-weight: 500;
                     font-size: 1.2rem;
@@ -90,7 +93,6 @@
 
     .section-heading {
         text-align: center;
-        margin: 2rem 0;
 
         h2 {
             color: #FF7004;
@@ -144,21 +146,16 @@
 
     .news-form {
         z-index: 2;
-        position: relative;
         width: 100%;
         padding: 10px 20px;
         border-radius: 12px;
         background-color: #fff;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
 
         button {
-            right: 10px;
-            position: absolute;
+            float: right;
             background-color: #007a58;
             color: #fff;
-            width: 160px;
+            width: 180px;
             font-size: 14px;
             font-weight: 500;
             padding: 12px 0px;
@@ -183,8 +180,8 @@
 
         input:focus {
             outline: none;
-            border-color: #007a58;
-            box-shadow: 0 0 8px #007a58;
+            border-color: #119744;
+            box-shadow: 0 0 8px #119744;
         }
     }
 

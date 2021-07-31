@@ -199,7 +199,7 @@
     .blog-widget-social {
         li {
             display: inline-block;
-            margin: 5px;
+            margin:2px;
 
             a {
                 i {
@@ -215,25 +215,3 @@
     }
 }
 
-#deliveryinfoBlog {
-    background-color: #F5F6F7;
-    padding: 2rem;
-    background-image: url(../photo/tea-home-new-gray-211d0.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-
-    .box {
-        padding: 5px;
-
-        i {
-            font-size: 4rem;
-            color: #007a58;
-        }
-    }
-
-    .text {
-        text-align: center;
-    }
-}

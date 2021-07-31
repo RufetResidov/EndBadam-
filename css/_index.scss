@@ -1,10 +1,8 @@
 /*Slider*/
 .slider {
     position: relative;
-
     .image-slider {
         position: relative;
-
         img {
             object-fit: cover;
             width: 100%;
@@ -122,8 +120,6 @@
     }
 }
 
-/*Slider*/
-
 /*OfferYou*/
 .offeryou {
     padding: 4rem 0;
@@ -163,28 +159,6 @@
     }
 
 }
-
-/*OfferYou*/
-
-/*Duration*/
-#duration {
-    background: url(../photo/subscribe.jpg) no-repeat center/cover;
-    background-attachment: fixed;
-    padding: 5rem 0;
-    overflow: hidden;
-
-    .box {
-        .text {
-            text-align: center;
-            font-size: 3rem;
-            color: white;
-        }
-    }
-}
-
-/*Duration*/
-
-
 /*Top Product*/
 #topProduct {
     padding: 4rem 0;
@@ -413,8 +387,21 @@
         }
     }
 }
+/*Duration*/
+#duration {
+    background: url(../photo/subscribe.jpg) no-repeat center/cover;
+    background-attachment: fixed;
+    padding: 3rem 0;
+    overflow: hidden;
 
-/*Top Product*/
+    .box {
+        .text {
+            text-align: center;
+            font-size: 2rem;
+            color: white;
+        }
+    }
+}
 
 /*New Product*/
 #newProduct {
@@ -742,33 +729,3 @@
 
 /*Blog*/
 
-/*DeliveryInfo*/
-#deliveryinfo {
-    background-image: url(/photo/tea-home-new-gray-211d0.jpg);
-    background-color: #fff;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    padding: 2rem;
-    margin-top: -6px;
-
-    .box {
-        padding: 5px;
-
-        .text {
-            text-align: center;
-
-            i {
-                font-size: 4rem;
-                color: #007a58;
-            }
-            p{
-                color: #007a58;
-                font-weight: 600;
-            }
-        }
-
-    }
-
-}
-
-/*DeliveryInfo*/
