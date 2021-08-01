@@ -1,7 +1,8 @@
 .user-form-part {
-    p{
+    p {
         font-weight: 500;
     }
+
     .user-form-logo {
         width: 150px;
         display: inline-block;
@@ -87,17 +88,21 @@
             color: #007a58;
         }
     }
-.user-form-footer{
-    margin-top: 1rem;
-    p{
-        font-weight: 600;
-        a{
-            color: #555;
-            transition:.4s ease-in-out;
-            &:hover{
-                color: #007a58;
+
+    .user-form-footer {
+        margin-top: 1rem;
+
+        p {
+            font-weight: 600;
+
+            a {
+                color: #555;
+                transition: .4s ease-in-out;
+
+                &:hover {
+                    color: #007a58;
+                }
             }
         }
     }
-}
 }

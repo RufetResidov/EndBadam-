@@ -175,63 +175,39 @@
             line-height: 1rem;
             letter-spacing: 0.5px;
         }
-        .select-shoping {
-            align-items: baseline;
-            .shop-select {
-                margin-left: 20px;
-            }
-        }
     }
-    .pagination {
-        text-align: end;
-        ul {
+    .bottom-paginate {
+        padding-top: 25px;
+        border-top: 1px solid #007a58;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .pagination {
+            align-items: center;
             justify-content: center;
-            border: 3px solid #007a58;
-            position: relative;
-            background: #fff;
             display: flex;
-            padding: 10px 20px;
-            border-radius: 50px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-        }
-
-        ul li {
+            padding-left: 0;
             list-style: none;
-            line-height: 50px;
-            margin: 0 5px;
         }
 
-        ul li.pageNumber {
-            width: 50px;
-            height: 50px;
-            line-height: 50px;
+        .page-link {
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
             text-align: center;
-        }
-
-        ul li a {
-            display: block;
-            text-decoration: none;
-            color: #383838;
-            font-weight: 600;
-            border-radius: 100%;
-        }
-
-        ul li.pageNumber:hover a,
-        ul li.pageNumber.active a {
+            border-radius: 50%;
+            font-weight: 400;
+            border: none;
+            padding: 0px;
             background: #007a58;
             color: #fff;
+            margin-left: 5px;
         }
 
-        ul li:first-child {
-            margin-right: 30px;
-            font-weight: 700;
-            font-size: 20px;
-        }
-
-        ul li:last-child {
-            margin-left: 30px;
-            font-weight: 700;
-            font-size: 20px;
+        .page-info {
+            color: #007a58;
+            font-weight: 600;
         }
     }
     .shop-sidebar-wrap {
