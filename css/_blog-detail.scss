@@ -42,7 +42,7 @@
 
             &:hover {
                 opacity: 0.7;
-                transform: translateY(-10px);
+
             }
         }
     }
@@ -53,6 +53,7 @@
 
     .blogCard {
         padding-bottom: 1rem;
+
         .thumb {
             border-top-left-radius: 10px;
             overflow: hidden;
@@ -67,12 +68,12 @@
         }
 
         .content {
+            box-shadow: 0 0px 2px 0px #777;
             border-bottom-right-radius: 10px;
             background-color: #F5F6F7;
             padding: 1rem;
             text-align: start;
             border-top: none !important;
-            border: 2px solid #007a58;
 
             h2 {
                 color: #000;
@@ -107,6 +108,7 @@
         border-radius: 8px;
         padding: 18px 25px 25px;
         background: #F5F6F7;
+        box-shadow: 0 0px 2px 0px #777;
 
         .blog-widget-title {
             padding-bottom: 16px;
@@ -199,7 +201,7 @@
     .blog-widget-social {
         li {
             display: inline-block;
-            margin:2px;
+            margin: 2px;
 
             a {
                 i {
@@ -214,4 +216,3 @@
         }
     }
 }
-

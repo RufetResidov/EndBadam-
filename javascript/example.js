@@ -1,38 +1,49 @@
 'use strict'
+//Input Value Total Price
+const total = document.getElementById("total")
+let azn= document.getElementById("total")
+let qiymet = document.getElementById("qiymet")
+let topla;
+
+function trackChange(value) {
+    total.innerHTML = " ";
+
+    topla = value * qiymet.value
+    total.innerHTML += topla+(" ₼")
+
+ 
+}
+
+
+//Plus Minus//
+$(function () {
+    $('.increment').click(function () {
+        var valueElement = $('#' + $(this).siblings('input').attr('id'));
+
+        if ($(this).hasClass('plus')) {
+            valueElement.val(Math.max(parseInt(valueElement.val()) + 1));
+        } else if (valueElement.val() > 0) // Stops the value going into negatives
+        {
+            valueElement.val(Math.max(parseInt(valueElement.val()) - 1));
+        }
+
+        return false;
+    });
+
+});
+//Plus Minus//
+////////////////////////////////////////
+//Input Value Total Price
+
+//MobileHeader
 $(".cate-btn").click(function (event) {
     event.stopPropagation();
-    $(".mobile-nav").fadeToggle();
+    $(".mobile-nav").fadeToggle(300);
 })
-$(document).click(function () {
-    if ($(".mobile-nav").is(":visible")) {
-        $(".mobile-nav").fadeOut();
-    }
-});
-//SLIDER
-$('.slider').slick();
-//ScrollHeader
-$(document).ready(function () {
-    $(window).scroll(function () {
-        if ($(window).scrollTop() > 100) {
-            $('#header').addClass('headeractive');
-        } else {
-            $('#header').removeClass('headeractive');
-
-        }
-    })
+$(".exit").click(function (event) {
+    event.stopPropagation();
+    $(".mobile-nav").fadeOut(300);
 })
-////////////////////////////////////////
-var btn = $('#scrollUp');
-//StartScrollUp
-
-$(window).scroll(function () {
-    if ($(window).scrollTop() > 300) {
-        btn.addClass('show');
-    } else {
-        btn.removeClass('show');
-    }
-
-});
 $(document).ready(function () {
 
     var load_flag = true;
@@ -56,7 +67,46 @@ $(document).ready(function () {
         });
     });
 });
+//MobileHeader
 
+//Animation OnlOad
+$(window).on('load', function () {
+    setTimeout(function () {
+        $(".loadImg").hide()
+        $("body").css("overflow-y", "scroll")
+    }, 300);
+});
+//Animation OnlOad
+
+// $(document).click(function () {
+//     if ($(".mobile-nav").is(":visible")) {
+//         $(".mobile-nav").fadeOut();
+//     }
+// });
+
+//ScrollHeader
+$(document).ready(function () {
+    $(window).scroll(function () {
+        if ($(window).scrollTop() > 100) {
+            $('#header').addClass('headeractive');
+        } else {
+            $('#header').removeClass('headeractive');
+
+        }
+    })
+})
+////////////////////////////////////////
+
+//ScrollUp
+var btn = $('#scrollUp');
+$(window).scroll(function () {
+    if ($(window).scrollTop() > 300) {
+        btn.addClass('show');
+    } else {
+        btn.removeClass('show');
+    }
+
+});
 btn.on('click', function (e) {
     e.preventDefault();
     $('html, body').animate({
@@ -66,24 +116,6 @@ btn.on('click', function (e) {
 //EndScrollUp
 ////////////////////////////////////////
 
-//Plus Minus//
-$(function () {
-    $('.increment').click(function () {
-        var valueElement = $('#' + $(this).siblings('input').attr('id'));
-
-        if ($(this).hasClass('plus')) {
-            valueElement.val(Math.max(parseInt(valueElement.val()) + 1));
-        } else if (valueElement.val() > 0) // Stops the value going into negatives
-        {
-            valueElement.val(Math.max(parseInt(valueElement.val()) - 1));
-        }
-
-        return false;
-    });
-
-});
-//Plus Minus//
-////////////////////////////////////////
 
 //Start IndexCount 
 $(document).ready(function () {
@@ -144,7 +176,8 @@ $(document).ready(function () {
     })
 
 })
-
+//SLIDER
+$('.slider').slick();
 //End IndexCount 
 ////////////////////////////////////////
 
@@ -185,11 +218,11 @@ $('.singleProductSlider').slick({
             }
         },
         {
-            breakpoint: 400,
+            breakpoint: 300,
             settings: {
                 dots: false,
                 arrows: false,
-                slidesToScroll: 1,
+                slidesToScroll: 2,
                 slidesToShow: 1
             }
         }
@@ -232,11 +265,11 @@ $('.newProductSlider').slick({
             }
         },
         {
-            breakpoint: 400,
+            breakpoint: 300,
             settings: {
                 dots: false,
                 arrows: false,
-                slidesToScroll: 1,
+                slidesToScroll: 2,
                 slidesToShow: 1
             }
         }

@@ -1,17 +1,18 @@
 /*Top Product*/
-.product-category-area {
+#product-category-area {
     padding: 4rem 0 1rem 0;
     text-align: center;
 
     .shop-bottom-area {
         .product {
-            border: 3px solid #007a58;
             border-radius: 10px;
             overflow: hidden;
+            box-shadow: 0px 0px 5px 0px;
 
             &:hover {
-                box-shadow: 2px 2px 12px 0px;
                 transition: 0.5s;
+                box-shadow: 0 0px 15px 0px rgb(153, 150, 150);
+
 
                 .thumb {
                     .add-to-cart {
@@ -54,9 +55,9 @@
                     z-index: 22;
                     position: absolute;
                     width: 50%;
-                    height: 6px;
+                    height: 5px;
                     bottom: -4px;
-                    background-color: rgb(17, 151, 68);
+                    background-color: #007a58;
                     left: 0px;
                     transition: all 0.4s ease-in-out;
                 }
@@ -66,9 +67,9 @@
                     z-index: 22;
                     position: absolute;
                     width: 50%;
-                    height: 6px;
+                    height: 5px;
                     bottom: -4px;
-                    background-color: rgb(17, 151, 68);
+                    background-color: #007a58;
                     right: 0px;
                     transition: all 0.4s ease-in-out;
                 }
@@ -143,6 +144,7 @@
             }
 
             .content {
+                height: 120px;
                 position: relative;
                 z-index: 10;
                 display: flex;
@@ -151,20 +153,25 @@
                 transition: all 0.3s ease 0s;
                 text-align: center;
                 background-color: #fff;
-
+                .price{
+                    .new{
+                        font-weight: 500;
+                    }
+                }
                 a {
                     font-size: 1rem;
                     color: #007a58;
                 }
             }
         }
+
         .bottom-paginate {
             padding-top: 25px;
             border-top: 1px solid #007a58;
             display: flex;
             align-items: center;
             justify-content: space-between;
-    
+
             .pagination {
                 align-items: center;
                 justify-content: center;
@@ -172,7 +179,7 @@
                 padding-left: 0;
                 list-style: none;
             }
-    
+
             .page-link {
                 width: 40px;
                 height: 40px;
@@ -186,7 +193,7 @@
                 color: #fff;
                 margin-left: 5px;
             }
-    
+
             .page-info {
                 color: #007a58;
                 font-weight: 600;
@@ -328,7 +335,6 @@
 
             &:hover {
                 opacity: 0.7;
-                transform: translateY(-10px);
             }
         }
     }

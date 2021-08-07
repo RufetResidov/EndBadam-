@@ -69,25 +69,27 @@
                 <div class="col-lg-6 col-sm-12 col-xs-12 col-12">
                     <div class="product-details-content">
                         <h2>Original Qoz</h2>
-                        <span class="product-price">$18.90</span>
+                        <span class="product-price">₼10.0</span>
                         <p class="product-description">Our company began in 1967 as a food buying club when the
                             “Founding Mothers” and other individuals banded together to establish a source for
                             unadulterated, unrefined,
                         </p>
                         <div class="price-details-quality">
-                            <input class="priceKq" type="number" min="0" placeholder="1000 qr">
-                            <div class="min-add-button">
+                            <input class="priceKq" onkeyup="trackChange(this.value)" id="myInput" type="text" min="0"
+                                max="1000" placeholder="1000 qr">
+                            <input type="hidden" value="10.0" id="qiymet">
 
-                                <div class="input-group">
-                                    <a href="#" class="input-group-addon minus increment"><i class="fa fa-minus"
-                                            aria-hidden="true"></i></a>
-
-                                    <input type="text" class="form-control" id="adults" size="10" value="0">
-
-                                    <a href="#" class="input-group-addon plus increment"><i class="fa fa-plus"
-                                            aria-hidden="true"></i></a>
+                            <div class="cart-action-group">
+                                <div class="product-action">
+                                    <button class="action-minus" title="Quantity Minus">
+                                        <i class="fas fa-minus"></i>
+                                    </button>
+                                    <input class="action-input" title="Quantity Number" type="text" name="quantity"
+                                        value="1">
+                                    <button class="action-plus" title="Quantity Plus">
+                                        <i class="fas fa-plus"></i>
+                                    </button>
                                 </div>
-
                             </div>
 
                             <button class="btn btn-priwmary">Səbətə əlavə et</button>
@@ -100,8 +102,9 @@
                                 <li><i class="fas fa-allergies"></i>
                                     <span>Ədəd olaraq məhsul seçmək istəyirsinizsə ikinci qutunu seçin</span>
                                 </li>
-                                <li><i class="fas fa-cash-register"></i>
-                                    <span>Security Policy (Edit With Customer Reassurance Module)</span>
+                                <li class="totalPrice"><i class="fas fa-money-bill-wave"></i>
+                                    <span>Ümumi Qiymət: </span><span id="total"></p>
+
                                 </li>
                             </ul>
                         </div>
@@ -157,8 +160,8 @@
                         <div class="content">
                             <h5 class="title"><a href="shop-left-sidebar.html">Simple minimal Chair </a></h5>
                             <span class="price">
-                                <span class="new">$38.50</span>
-                                <span class="old"><del>$48.50</del></span>
+                                <span class="new">₼38.50</span>
+                                <span class="old"><del>₼48.50</del></span>
                             </span>
                         </div>
                     </div>
@@ -183,8 +186,8 @@
                         <div class="content">
                             <h5 class="title"><a href="shop-left-sidebar.html">Simple minimal Chair </a></h5>
                             <span class="price">
-                                <span class="new">$38.50</span>
-                                <span class="old"><del>$48.50</del></span>
+                                <span class="new">₼38.50</span>
+                                <span class="old"><del>₼48.50</del></span>
                             </span>
                         </div>
                     </div>
@@ -209,8 +212,8 @@
                         <div class="content">
                             <h5 class="title"><a href="shop-left-sidebar.html">Simple minimal Chair </a></h5>
                             <span class="price">
-                                <span class="new">$38.50</span>
-                                <span class="old"><del>$48.50</del></span>
+                                <span class="new">₼38.50</span>
+                                <span class="old"><del>₼48.50</del></span>
                             </span>
                         </div>
                     </div>
@@ -235,8 +238,8 @@
                         <div class="content">
                             <h5 class="title"><a href="shop-left-sidebar.html">Simple minimal Chair </a></h5>
                             <span class="price">
-                                <span class="new">$38.50</span>
-                                <span class="old"><del>$48.50</del></span>
+                                <span class="new">₼38.50</span>
+                                <span class="old"><del>₼48.50</del></span>
                             </span>
                         </div>
                     </div>
@@ -261,8 +264,8 @@
                         <div class="content">
                             <h5 class="title"><a href="shop-left-sidebar.html">Simple minimal Chair </a></h5>
                             <span class="price">
-                                <span class="new">$38.50</span>
-                                <span class="old"><del>$48.50</del></span>
+                                <span class="new">₼38.50</span>
+                                <span class="old"><del>₼48.50</del></span>
                             </span>
                         </div>
                     </div>
@@ -287,8 +290,8 @@
                         <div class="content">
                             <h5 class="title"><a href="shop-left-sidebar.html">Simple minimal Chair </a></h5>
                             <span class="price">
-                                <span class="new">$38.50</span>
-                                <span class="old"><del>$48.50</del></span>
+                                <span class="new">₼38.50</span>
+                                <span class="old"><del>₼48.50</del></span>
                             </span>
                         </div>
                     </div>
@@ -333,8 +336,8 @@
                         <div class="content">
                             <h5 class="title"><a href="shop-left-sidebar.html">Simple minimal Chair </a></h5>
                             <span class="price">
-                                <span class="new">$38.50</span>
-                                <span class="old"><del>$48.50</del></span>
+                                <span class="new">₼38.50</span>
+                                <span class="old"><del>₼48.50</del></span>
                             </span>
                         </div>
                     </div>
@@ -359,8 +362,8 @@
                         <div class="content">
                             <h5 class="title"><a href="shop-left-sidebar.html">Simple minimal Chair </a></h5>
                             <span class="price">
-                                <span class="new">$38.50</span>
-                                <span class="old"><del>$48.50</del></span>
+                                <span class="new">₼38.50</span>
+                                <span class="old"><del>₼48.50</del></span>
                             </span>
                         </div>
                     </div>
@@ -385,8 +388,8 @@
                         <div class="content">
                             <h5 class="title"><a href="shop-left-sidebar.html">Simple minimal Chair </a></h5>
                             <span class="price">
-                                <span class="new">$38.50</span>
-                                <span class="old"><del>$48.50</del></span>
+                                <span class="new">₼38.50</span>
+                                <span class="old"><del>₼48.50</del></span>
                             </span>
                         </div>
                     </div>
@@ -411,8 +414,8 @@
                         <div class="content">
                             <h5 class="title"><a href="shop-left-sidebar.html">Simple minimal Chair </a></h5>
                             <span class="price">
-                                <span class="new">$38.50</span>
-                                <span class="old"><del>$48.50</del></span>
+                                <span class="new">₼38.50</span>
+                                <span class="old"><del>₼48.50</del></span>
                             </span>
                         </div>
                     </div>
@@ -437,8 +440,8 @@
                         <div class="content">
                             <h5 class="title"><a href="shop-left-sidebar.html">Simple minimal Chair </a></h5>
                             <span class="price">
-                                <span class="new">$38.50</span>
-                                <span class="old"><del>$48.50</del></span>
+                                <span class="new">₼38.50</span>
+                                <span class="old"><del>₼48.50</del></span>
                             </span>
                         </div>
                     </div>
@@ -463,8 +466,8 @@
                         <div class="content">
                             <h5 class="title"><a href="shop-left-sidebar.html">Simple minimal Chair </a></h5>
                             <span class="price">
-                                <span class="new">$38.50</span>
-                                <span class="old"><del>$48.50</del></span>
+                                <span class="new">₼38.50</span>
+                                <span class="old"><del>₼48.50</del></span>
                             </span>
                         </div>
                     </div>
@@ -474,6 +477,7 @@
     </section>
     <!-- Single-Same-Product End-->
     <script src="javascript/jquery.js"></script>
+    <script src="javascript/cart.js"></script>
     <script src="slick/slick.js"></script>
     <script src="javascript/example.js"></script>
 </body>
