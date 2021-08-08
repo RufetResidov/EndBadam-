@@ -1,11 +1,11 @@
 #footer {
     border-top: 1px solid #007a58;
-    padding-top: 5rem;
+    padding-top: 3rem;
     background: #fff;
 
     .logo-title {
         img {
-            width: 110px;
+            width: 130px;
         }
         span{
             font-weight: 500;
@@ -20,7 +20,7 @@
             padding: 10px;
             margin-left: 5px;
             color: #007a58;
-            box-shadow: 0 0 15px rgba(24, 24, 24, 0.3);
+            box-shadow: 0 0 5px 0 rgba(24, 24, 24, 0.3);
             transition: 0.4s ease-in-out;
 
             &:hover {

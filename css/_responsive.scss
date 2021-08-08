@@ -34,6 +34,50 @@
         }
     }
 
+    .loadImg {
+
+        .load-middle {
+
+            img {
+                width: 150px;
+                min-height: 150px;
+                border: 4px double #007a58;
+
+            }
+        }
+    }
+
+    #exampleModal .modal-content .modal-body .swiper-top .swiper-slide {
+        height: 200px;
+
+        img {
+            height: 200px;
+        }
+    }
+
+    #exampleModal .modal-content .modal-body .product-details-content .product-description {
+        margin-top: 0;
+        line-height: normal;
+    }
+
+    //List Section//
+    #single-list {
+        padding: 6rem 0;
+
+        h1 {
+            margin-bottom: 0px;
+            font-size: 30px;
+        }
+
+        .breadcrumb {
+
+            span,
+            a {
+                font-size: 1rem;
+            }
+        }
+    }
+
     //Index Section//
     .slider {
 
@@ -328,22 +372,30 @@
         }
     }
 
-    //Blog Section//
-    #single-blog-detail {
-        padding: 6rem 0 !important;
-
-        h1 {
-            font-size: 30px !important;
+    //Checkout Section
+    #checkout-item {
+        .single-content-info {
+            padding: 10px 20px;
         }
 
-        .breadcrumb {
+        .checkout-order {
 
-            span,
-            a {
-                font-size: 14px !important;
+            a,
+            table {
+                font-size: 13px;
+            }
+        }
+
+        .checkout-payment-method {
+            .box {
+                label {
+                    font-size: 12px;
+                }
             }
         }
     }
+
+    //Blog Section//
 
     #blog-details {
         .blogCard {
@@ -413,22 +465,6 @@
         }
     }
 
-    #single-blog-list {
-        padding: 6rem 0 !important;
-
-        h1 {
-            font-size: 30px !important;
-        }
-
-        .breadcrumb {
-
-            span,
-            a {
-                font-size: 14px !important;
-            }
-        }
-    }
-
     #deliveryinfoBlogList {
         .box {
             i {
@@ -471,23 +507,6 @@
     }
 
     //Contact Section//
-    #single-contact {
-        padding: 6rem 0;
-
-        h1 {
-            margin-bottom: 0px;
-            font-size: 40px;
-        }
-
-        .breadcrumb {
-
-            span,
-            a {
-                font-size: 1rem;
-            }
-        }
-    }
-
     #social-contact {
         padding: 3rem 0;
 
@@ -594,22 +613,6 @@
     }
 
     //About Section//
-    #single-about {
-        padding: 6rem 0;
-
-        h1 {
-            margin-bottom: 0px;
-            font-size: 30px;
-        }
-
-        .breadcrumb {
-
-            span,
-            a {
-                font-size: 1rem;
-            }
-        }
-    }
 
     #about-why-me {
         .left {
@@ -710,23 +713,6 @@
     }
 
     //Product//
-    #single-product {
-        padding: 6rem 0 !important;
-
-        h1 {
-            margin-bottom: 0px !important;
-            font-size: 20px !important;
-        }
-
-        .breadcrumb {
-
-            span,
-            a {
-                font-size: 14px !important;
-            }
-        }
-    }
-
     #product-category-area {
         .product {
 
@@ -790,22 +776,6 @@
     }
 
     //Shop//
-    #single-about-shop {
-        padding: 6rem 0;
-
-        h1 {
-            margin-bottom: 0px;
-            font-size: 30px;
-        }
-
-        .breadcrumb {
-
-            span,
-            a {
-                font-size: 12px;
-            }
-        }
-    }
 
     .title-single-product {
         h2 {
@@ -1023,7 +993,7 @@
         width: 50px !important;
         height: 50px !important;
         right: 5px !important;
-        bottom: 65px !important;
+        bottom: 55px !important;
 
         &::after {
             font-size: 30px !important;

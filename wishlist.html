@@ -19,7 +19,7 @@
 
 <body>
     <!-- Start single-about -->
-    <section id="single-about">
+    <section id="single-list">
         <div class="container">
             <h1>Bəyənilən</h1>
             <ol class="breadcrumb">
@@ -41,8 +41,9 @@
                                 <tr>
                                     <th><label>Məhsul</label></th>
                                     <th><label>Adı</label></th>
-                                    <th><label>Qiyməti</label></th>
+                                    <th><label>Qiymət</label></th>
                                     <th><label>Miqdar</label></th>
+                                    <th><label>Ümumi qiymət</label></th>
                                     <th><label>Səbət</label></th>
                                     <th><label>Bax/Sil</label></th>
                                 </tr>
@@ -55,10 +56,13 @@
                                     <td data-label="Qiyməti">$78.00</td>
                                     <td data-label="Miqdar ">
                                         <div class="table-input">
-                                            <input style="font-size: 13px;" class="input1" type="text"
-                                                placeholder="Miqdar daxil et">
+                                            <input class="priceKq" onkeyup="trackChange(this.value)" id="myInput"
+                                                type="text" min="0" max="1000" placeholder="1000 qr">
+                                            <input type="hidden" value="10.0" id="qiymet">
+
                                         </div>
                                     </td>
+                                    <td id="qiymet" data-label="Ümumi qiymət"> <span id="total"></span></td>
 
                                     <td data-label="Bax/Sil"><button class="btn btn-success ">Səbətə at </button>
                                     </td>
@@ -77,57 +81,21 @@
                                     <td data-label="Adı">Hind Qozu</td>
                                     <td data-label="Qiyməti">$78.00</td>
                                     <td data-label="Miqdar ">
-                                        <div class="table-input">
-                                            <input style="font-size: 13px;" class="input1" type="text"
-                                                placeholder="Miqdar daxil et">
-                                        </div>
-                                    </td>
 
-                                    <td data-label="Bax/Sil"><button class="btn btn-success ">Səbətə at </button>
-                                    </td>
-                                    <td data-label="Səbət">
-                                        <div class="icon-table">
-                                            <a class="view" href="#" title="Quick View" data-bs-toggle="modal"
-                                                data-bs-target="#product-view"><i class="fas fa-eye"></i></a>
-                                            <a class="trash" href="#" title="Remove Wishlist"><i
-                                                    class="fas fa-trash-alt"></i></a>
+                                        <div class="cart-action-group">
+                                            <div class="product-action">
+                                                <button class="action-minus" title="Quantity Minus">
+                                                    <i class="fas fa-minus"></i>
+                                                </button>
+                                                <input class="action-input" title="Quantity Number" type="text"
+                                                    name="quantity" value="1">
+                                                <button class="action-plus" title="Quantity Plus">
+                                                    <i class="fas fa-plus"></i>
+                                                </button>
+                                            </div>
                                         </div>
                                     </td>
-                                </tr>
-                                <tr>
-                                    <td class="first-table" data-label="Məhsul"><img class="img-table"
-                                            src="photo/tea1.jpg" alt=""></td>
-                                    <td data-label="Adı">Hind Qozu</td>
-                                    <td data-label="Qiyməti">$78.00</td>
-                                    <td data-label="Miqdar ">
-                                        <div class="table-input">
-                                            <input style="font-size: 13px;" class="input1" type="text"
-                                                placeholder="Miqdar daxil et">
-                                        </div>
-                                    </td>
-
-                                    <td data-label="Bax/Sil"><button class="btn btn-success ">Səbətə at </button>
-                                    </td>
-                                    <td data-label="Səbət">
-                                        <div class="icon-table">
-                                            <a class="view" href="#" title="Quick View" data-bs-toggle="modal"
-                                                data-bs-target="#product-view"><i class="fas fa-eye"></i></a>
-                                            <a class="trash" href="#" title="Remove Wishlist"><i
-                                                    class="fas fa-trash-alt"></i></a>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="first-table" data-label="Məhsul"><img class="img-table"
-                                            src="photo/tea1.jpg" alt=""></td>
-                                    <td data-label="Adı">Hind Qozu</td>
-                                    <td data-label="Qiyməti">$78.00</td>
-                                    <td data-label="Miqdar ">
-                                        <div class="table-input">
-                                            <input style="font-size: 13px;" class="input1" type="text"
-                                                placeholder="Miqdar daxil et">
-                                        </div>
-                                    </td>
+                                    <td data-label="Ümumi qiymət">$78.00</td>
 
                                     <td data-label="Bax/Sil"><button class="btn btn-success ">Səbətə at </button>
                                     </td>
@@ -202,7 +170,7 @@
     <!----------------------------------->
     <!-- End DeliveryinfoBlog -->
     <script src="javascript/jquery.js"></script>
-    <script src="javascript/jquery.js"></script>
+    <script src="javascript/cart.js"></script>
     <script src="slick/slick.js"></script>
     <script src="javascript/example.js"></script>
 </body>

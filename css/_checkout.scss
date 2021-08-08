@@ -1,0 +1,167 @@
+#checkout-item {
+    padding: 20px;
+    border-bottom: 1px solid #007a58;
+    .single-content-info {
+        border: 1px solid #26415d4d;
+        padding: 30px;
+        border-radius: 6px;
+
+        .contact-form {
+
+            h4 {
+                font-weight: 700;
+                line-height: 10px;
+                font-size: 1.5rem;
+                margin-bottom: 2rem;
+            }
+
+            .form-input-group {
+                margin-bottom: 25px;
+                position: relative;
+
+                input:focus {
+                    outline: none;
+                    border-color: #007a57;
+                    box-shadow: 0 0 8px #007a57;
+                }
+
+                textarea:focus {
+                    outline: none;
+                    border-color: #007a58;
+                    box-shadow: 0 0 8px #007a58;
+                }
+
+                i {
+                    position: absolute;
+                    top: 0px;
+                    left: 0px;
+                    width: 45px;
+                    height: 45px;
+                    font-size: 18px;
+                    line-height: 45px;
+                    border-radius: 50%;
+                    text-align: center;
+                    color: #555555;
+                }
+
+                .form-control {
+                    width: 100%;
+                    height: 45px;
+                    border-radius: 6px;
+                    padding: 0px 20px 0 40px;
+                    border: 2px solid #d8d8d8;
+                }
+            }
+
+            .form-btn {
+                width: 100%;
+                height: 45px;
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 45px;
+                border-radius: 6px;
+                letter-spacing: 0.5px;
+                text-align: center;
+                text-transform: uppercase;
+                color: #fff;
+                background: #007a58;
+                border: 1px solid transparent;
+                transition: 0.4s ease-in-out;
+
+                &:hover {
+                    color: #007a58;
+                    background-color: #fff;
+                    border: 1px solid #007a58;
+                }
+            }
+        }
+    }
+
+    .checkout-order {
+        border: 1px solid #26415d4d;
+        padding: 20px;
+        border-radius: 6px;
+
+        .btn-hover {
+            background-color: #007a58;
+            color: #fff;
+            display: block;
+            font-weight: 700;
+            letter-spacing: 1px;
+            line-height: 1;
+            padding: 18px 20px;
+            text-align: center;
+            border-bottom-left-radius: 6px;
+            border-bottom-right-radius: 6px;
+        }
+
+        .table-responsive {
+            text-align: center;
+            border-radius: 6px;
+
+            tbody tr:nth-child(even) {
+                background-color: #eee;
+            }
+
+            tbody tr:nth-child(odd) {
+                background-color: #fff;
+            }
+
+            table {
+                border: 1px solid #26415d4d;
+                width: 100%;
+
+                thead {
+                    background: #ededed;
+
+                    tr {
+                        th {
+                            padding: 10px;
+                            border: 1px solid #26415d4d;
+                        }
+                    }
+                }
+
+                tbody {
+                    tr {
+                        td {
+                            padding: 10px;
+                            border: 1px solid #26415d4d;
+                        }
+                    }
+                }
+
+                tfoot {
+                    tr {
+                        td {
+                            padding: 10px;
+                            border: 1px solid #26415d4d;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .checkout-payment-method {
+        border: 1px solid #26415d4d;
+        padding: 20px;
+        border-radius: 6px;
+
+        label {
+            font-size: 1rem;
+            padding: 5px;
+            font-weight: 500;
+        }
+
+        i {
+            font-size: 18px;
+            margin-left: 10px;
+            color: #007a58;
+        }
+    }
+}
+
+#single-list {
+    background-image: url(..//photo/contactback.jpg);
+}

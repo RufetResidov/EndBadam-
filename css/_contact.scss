@@ -1,51 +1,6 @@
 // <!-- Start Single-Contact -->
-#single-contact {
-    text-align: center;
-    width: 100%;
-    padding: 8rem 0;
+#single-list {
     background-image: url(..//photo/process-parallaxx.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    h1 {
-        margin-top: 0;
-        margin-bottom: 10px;
-        font-size: 60px;
-        color: #fff;
-        font-weight: 500;
-        text-align: center;
-    }
-
-    .breadcrumb {
-        display: flex;
-        justify-content: center;
-
-        a {
-            position: relative;
-
-            &::after {
-                font-family: "Font Awesome 5 Free";
-                content: "\f105";
-                font-weight: 600;
-                font-size: 14px;
-                margin: 0 5px;
-            }
-        }
-
-        span,
-        a {
-            display: inline-block;
-            font-weight: 600;
-            color: #fff;
-            font-size: 1.2rem;
-            transition: 0.4s ease-in-out;
-
-            &:hover {
-                opacity: 0.7;
-            }
-        }
-    }
 }
 
 //<!-- Start Social-Contact -->
@@ -125,6 +80,7 @@
     margin-top: -6px;
     border-top: 1px solid #3B7916;
     border-bottom: 1px solid #3B7916;
+
     .box {
         padding: 10px;
 
@@ -159,7 +115,7 @@
 
     .contact-map {
         padding: 30px;
-        box-shadow: 0px 0px 7px 0px ;
+        box-shadow: 0px 0px 7px 0px;
         margin: 0px 2.5px 30px;
         border-radius: 10px;
         background: #fff;
@@ -298,7 +254,7 @@
         z-index: 3;
 
         h2 {
-            font-size: 35px;
+            font-size: 30px;
             color: #fff;
             margin-bottom: 5px;
         }

@@ -1,11 +1,13 @@
 //Shop-Basket
 $(".shop-icon").on("click", function () {
-  $('.cart-sidebar').addClass('active')
+  $('.cart-sidebar').addClass('active'),
+  $('body').css('overflow-y','hidden'),
   $('.off_canvars_overlay').addClass('active')
 
 });
 $('.cart-close').on("click", function () {
-  $('.cart-sidebar').removeClass('active')
+  $('.cart-sidebar').removeClass('active'),
+  $('body').css('overflow-y','scroll'),
   $('.off_canvars_overlay').removeClass('active')
 
 });

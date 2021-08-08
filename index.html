@@ -50,12 +50,29 @@
                             <p>Unit Price - ₼8.75</p>
                         </div>
                         <div class="cart-action-group">
+                            <input class="priceKq" onkeyup="trackChange(this.value)" id="myInput" type="text" min="0"
+                                maxlength="5" placeholder="0.100 qr">
+                            <input type="hidden" value="10.0" id="qiymet">
+                            <h6> <span id="total"></span> </h6>
+                        </div>
+                    </div>
+                </li>
+                <li class="cart-item">
+                    <div class="cart-media"><a href="#"><img src="/photo/safre.png" alt="product"></a><button
+                            class="cart-delete"><i class="far fa-trash-alt"></i></button>
+                    </div>
+                    <div class="cart-info-group">
+                        <div class="cart-info">
+                            <h6><a href="product-single.html">existing product name</a></h6>
+                            <p>Unit Price - ₼8.75</p>
+                        </div>
+                        <div class="cart-action-group">
                             <div class="product-action">
                                 <button class="action-minus" title="Quantity Minus">
                                     <i class="fas fa-minus"></i>
                                 </button>
-                                <input class="action-input" title="Quantity Number" type="text" name="quantity"
-                                    value="1">
+                                <input class="action-input" maxlength="3" title="Quantity Number" type="text"
+                                    name="quantity" value="1">
                                 <button class="action-plus" title="Quantity Plus">
                                     <i class="fas fa-plus"></i>
                                 </button>
@@ -74,17 +91,10 @@
                             <p>Unit Price - ₼8.75</p>
                         </div>
                         <div class="cart-action-group">
-                            <div class="product-action">
-                                <button class="action-minus" title="Quantity Minus">
-                                    <i class="fas fa-minus"></i>
-                                </button>
-                                <input class="action-input" title="Quantity Number" type="text" name="quantity"
-                                    value="1">
-                                <button class="action-plus" title="Quantity Plus">
-                                    <i class="fas fa-plus"></i>
-                                </button>
-                            </div>
-                            <h6>₼56.98</h6>
+                            <input class="priceKq" onkeyup="trackChange(this.value)" id="myInput" type="text" min="0"
+                                maxlength="5" placeholder="0.100 qr">
+                            <input type="hidden" value="10.0" id="qiymet">
+                            <h6> <span id="total"></span> </h6>
                         </div>
                     </div>
                 </li>
@@ -103,7 +113,7 @@
                                     <i class="fas fa-minus"></i>
                                 </button>
                                 <input class="action-input" title="Quantity Number" type="text" name="quantity"
-                                    value="1">
+                                    maxlength="3" value="1">
                                 <button class="action-plus" title="Quantity Plus">
                                     <i class="fas fa-plus"></i>
                                 </button>
@@ -122,17 +132,10 @@
                             <p>Unit Price - ₼8.75</p>
                         </div>
                         <div class="cart-action-group">
-                            <div class="product-action">
-                                <button class="action-minus" title="Quantity Minus">
-                                    <i class="fas fa-minus"></i>
-                                </button>
-                                <input class="action-input" title="Quantity Number" type="text" name="quantity"
-                                    value="1">
-                                <button class="action-plus" title="Quantity Plus">
-                                    <i class="fas fa-plus"></i>
-                                </button>
-                            </div>
-                            <h6>₼56.98</h6>
+                            <input class="priceKq" onkeyup="trackChange(this.value)" id="myInput" type="text" min="0"
+                                maxlength="5" placeholder="0.100 qr">
+                            <input type="hidden" value="10.0" id="qiymet">
+                            <h6> <span id="total"></span> </h6>
                         </div>
                     </div>
                 </li>
@@ -151,7 +154,7 @@
                                     <i class="fas fa-minus"></i>
                                 </button>
                                 <input class="action-input" title="Quantity Number" type="text" name="quantity"
-                                    value="1">
+                                    maxlength="3" value="1">
                                 <button class="action-plus" title="Quantity Plus">
                                     <i class="fas fa-plus"></i>
                                 </button>
@@ -333,15 +336,99 @@
         </div>
         <img src="photo/Group 2.svg " alt="">
         <ul>
-            <li><a href="#">Ana Səhifə</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Haqqımızda</a></li>
-            <li><a href="#">Əlaqə</a></li>
-            <li><a href="#">Məhsullar</a></li>
-            <li><a href="#">Satış</a></li>
+            <li><a href="index.html">Ana Səhifə</a></li>
+            <li><a href="blog-list.html">Blog</a></li>
+            <li><a href="about.html">Haqqımızda</a></li>
+            <li><a href="contact.html">Əlaqə</a></li>
+            <li><a href="product.html">Məhsullar</a></li>
+            <li><a href="shop.html">Satış</a></li>
         </ul>
     </div>
 
+    <!-- Modal Area Start -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-lg-6 col-sm-12 col-xs-12 col-12 ">
+                            <div class="swiper-top">
+                                <div class="swiper-slide ">
+                                    <img src="photo/process-parallaxx.jpg" alt="">
+                                </div>
+                                <div class="swiper-slide ">
+                                    <img src="photo/slider4.jpg" alt="">
+                                </div>
+                                <div class="swiper-slide ">
+                                    <img src="photo/slider4.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-sm-12 col-xs-12 col-12">
+                            <div class="product-details-content">
+                                <h2>Original Qoz</h2>
+                                <h5 class="view-price"><del>₼38.00</del><span>₼24.00<small>/Kq</small></span></h5>
+                                <p class="product-description">Our company began in 1967 as a food buying club when the
+                                    “Founding Mothers” and other individuals banded together to establish a source for
+                                    unadulterated, unrefined,
+                                </p>
+                                <div class="price-details-quality">
+                                    <input class="priceKq" onkeyup="trackChange(this.value)" id="myInput" type="text"
+                                        min="0" max="1000" placeholder="1000 qr">
+                                    <input type="hidden" value="10.0" id="qiymet">
+
+                                    <div class="cart-action-group">
+                                        <div class="product-action">
+                                            <button class="action-minus" title="Quantity Minus">
+                                                <i class="fas fa-minus"></i>
+                                            </button>
+                                            <input class="action-input" title="Quantity Number" type="text"
+                                                name="quantity" value="1">
+                                            <button class="action-plus" title="Quantity Plus">
+                                                <i class="fas fa-plus"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                    <button class="btn btn-priwmary">Səbətə əlavə et</button>
+                                </div>
+                                <div class="pro-details">
+                                    <ul>
+                                        <li><i class="fas fa-balance-scale-left"></i>
+                                            <span>Dəyəri 0.100 qr+ və ya 1 kq+ olaraq daxil edin</span>
+                                        </li>
+                                        <li><i class="fas fa-allergies"></i>
+                                            <span>Ədəd olaraq məhsul seçmək istəyirsinizsə ikinci qutunu seçin</span>
+                                        </li>
+                                        <li class="totalPrice"><i class="fas fa-money-bill-wave"></i>
+                                            <span>Ümumi Qiymət: </span><span id="total"></p>
+
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="product-widget">
+                                    <h3 class="product-widget-title">Əlaqə </h3>
+                                    <ul class="product-widget-social">
+                                        <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-telegram"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
+                                        <li><a href="#"><i class="fas fa-phone"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Area End -->
+    <!--*******************************************************-->
+    <!-- data-bs-toggle="modal" data-bs-target="#exampleModal" -->
 
 
     <!-- Start Slider -->
@@ -432,90 +519,6 @@
     <!-- End OfferYou -->
     <!----------------------------------->
 
-    <!-- Modal Area Start -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-xl">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <div class="row">
-                        <div class="col-lg-6 col-sm-12 col-xs-12 col-12 ">
-                            <div class="swiper-top">
-                                <div class="swiper-slide ">
-                                    <img src="photo/slider2.jpg" alt="">
-                                </div>
-                                <div class="swiper-slide ">
-                                    <img src="photo/slider4.jpg" alt="">
-                                </div>
-                                <div class="swiper-slide ">
-                                    <img src="photo/slider4.jpg" alt="">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-sm-12 col-xs-12 col-12">
-                            <div class="product-details-content">
-                                <h2>Original Qoz</h2>
-                                <h5 class="view-price"><del>₼38.00</del><span>₼24.00<small>/Kq</small></span></h5>
-                                <p class="product-description">Our company began in 1967 as a food buying club when the
-                                    “Founding Mothers” and other individuals banded together to establish a source for
-                                    unadulterated, unrefined,
-                                </p>
-                                <div class="price-details-quality">
-                                    <input class="priceKq" onkeyup="trackChange(this.value)" id="myInput" type="text"
-                                        min="0" max="1000" placeholder="1000 qr">
-                                    <input type="hidden" value="10.0" id="qiymet">
-
-                                    <div class="cart-action-group">
-                                        <div class="product-action">
-                                            <button class="action-minus" title="Quantity Minus">
-                                                <i class="fas fa-minus"></i>
-                                            </button>
-                                            <input class="action-input" title="Quantity Number" type="text"
-                                                name="quantity" value="1">
-                                            <button class="action-plus" title="Quantity Plus">
-                                                <i class="fas fa-plus"></i>
-                                            </button>
-                                        </div>
-                                    </div>
-
-                                    <button class="btn btn-priwmary">Səbətə əlavə et</button>
-                                </div>
-                                <div class="pro-details">
-                                    <ul>
-                                        <li><i class="fas fa-balance-scale-left"></i>
-                                            <span>Çəki olaraq məhsul seçmək istəyirsinizsə birinci qutunu seçin</span>
-                                        </li>
-                                        <li><i class="fas fa-allergies"></i>
-                                            <span>Ədəd olaraq məhsul seçmək istəyirsinizsə ikinci qutunu seçin</span>
-                                        </li>
-                                        <li class="totalPrice"><i class="fas fa-money-bill-wave"></i>
-                                            <span>Ümumi Qiymət: </span><span id="total"></p>
-
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="product-widget">
-                                    <h3 class="product-widget-title">Əlaqə </h3>
-                                    <ul class="product-widget-social">
-                                        <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-                                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                                        <li><a href="#"><i class="fab fa-telegram"></i></a></li>
-                                        <li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
-                                        <li><a href="#"><i class="fas fa-phone"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Modal Area End -->
-    <!--*******************************************************-->
-    <!-- data-bs-toggle="modal" data-bs-target="#exampleModal" -->
 
     <!-- Start Top Product -->
     <section id="topProduct">
@@ -554,9 +557,9 @@
                                 </span>
                                 <div class="actions">
                                     <a href="#" class="wishlist"><i class="far fa-heart"></i></a>
-                                    <a href="#" class="view"><i class="fas fa-arrows-alt"></i></a>
+                                    <a href="#" class="view" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fas fa-arrows-alt"></i></a>
                                 </div>
-                                <button data-bs-toggle="modal" data-bs-target="#exampleModal" title="Add To Cart"
+                                <button title="Add To Cart"
                                     class=" add-to-cart">Add
                                     To Cart
                                 </button>
@@ -584,9 +587,9 @@
                                 </span>
                                 <div class="actions">
                                     <a href="#" class="wishlist"><i class="far fa-heart"></i></a>
-                                    <a href="#" class="view"><i class="fas fa-arrows-alt"></i></a>
+                                    <a href="#" class="view" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fas fa-arrows-alt"></i></a>
                                 </div>
-                                <button data-bs-toggle="modal" data-bs-target="#exampleModal" title="Add To Cart"
+                              <button title="Add To Cart"
                                     class=" add-to-cart">Add
                                     To Cart
                                 </button>
@@ -614,9 +617,9 @@
                                 </span>
                                 <div class="actions">
                                     <a href="#" class="wishlist"><i class="far fa-heart"></i></a>
-                                    <a href="#" class="view"><i class="fas fa-arrows-alt"></i></a>
+                                    <a href="#" class="view" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fas fa-arrows-alt"></i></a>
                                 </div>
-                                <button data-bs-toggle="modal" data-bs-target="#exampleModal" title="Add To Cart"
+                              <button title="Add To Cart"
                                     class=" add-to-cart">Add
                                     To Cart
                                 </button>
@@ -644,9 +647,9 @@
                                 </span>
                                 <div class="actions">
                                     <a href="#" class="wishlist"><i class="far fa-heart"></i></a>
-                                    <a href="#" class="view"><i class="fas fa-arrows-alt"></i></a>
+                                    <a href="#" class="view" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fas fa-arrows-alt"></i></a>
                                 </div>
-                                <button data-bs-toggle="modal" data-bs-target="#exampleModal" title="Add To Cart"
+                              <button title="Add To Cart"
                                     class=" add-to-cart">Add
                                     To Cart
                                 </button>
@@ -674,9 +677,9 @@
                                 </span>
                                 <div class="actions">
                                     <a href="#" class="wishlist"><i class="far fa-heart"></i></a>
-                                    <a href="#" class="view"><i class="fas fa-arrows-alt"></i></a>
+                                    <a href="#" class="view" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fas fa-arrows-alt"></i></a>
                                 </div>
-                                <button data-bs-toggle="modal" data-bs-target="#exampleModal" title="Add To Cart"
+                              <button title="Add To Cart"
                                     class=" add-to-cart">Add
                                     To Cart
                                 </button>
@@ -704,9 +707,9 @@
                                 </span>
                                 <div class="actions">
                                     <a href="#" class="wishlist"><i class="far fa-heart"></i></a>
-                                    <a href="#" class="view"><i class="fas fa-arrows-alt"></i></a>
+                                    <a href="#" class="view" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fas fa-arrows-alt"></i></a>
                                 </div>
-                                <button data-bs-toggle="modal" data-bs-target="#exampleModal" title="Add To Cart"
+                              <button title="Add To Cart"
                                     class=" add-to-cart">Add
                                     To Cart
                                 </button>
@@ -734,9 +737,9 @@
                                 </span>
                                 <div class="actions">
                                     <a href="#" class="wishlist"><i class="far fa-heart"></i></a>
-                                    <a href="#" class="view"><i class="fas fa-arrows-alt"></i></a>
+                                    <a href="#" class="view" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fas fa-arrows-alt"></i></a>
                                 </div>
-                                <button data-bs-toggle="modal" data-bs-target="#exampleModal" title="Add To Cart"
+                              <button title="Add To Cart"
                                     class=" add-to-cart">Add
                                     To Cart
                                 </button>
@@ -764,9 +767,9 @@
                                 </span>
                                 <div class="actions">
                                     <a href="#" class="wishlist"><i class="far fa-heart"></i></a>
-                                    <a href="#" class="view"><i class="fas fa-arrows-alt"></i></a>
+                                    <a href="#" class="view" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fas fa-arrows-alt"></i></a>
                                 </div>
-                                <button data-bs-toggle="modal" data-bs-target="#exampleModal" title="Add To Cart"
+                              <button title="Add To Cart"
                                     class=" add-to-cart">Add
                                     To Cart
                                 </button>
@@ -854,7 +857,7 @@
                         </span>
                         <div class="actions">
                             <a href="#" class="wishlist"><i class="far fa-heart"></i></a>
-                            <a href="#" class="view"><i class="fas fa-arrows-alt"></i></a>
+                            <a href="#" class="view" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fas fa-arrows-alt"></i></a>
                         </div>
                         <button title="Add To Cart" class=" add-to-cart">Add
                             To Cart
@@ -880,7 +883,7 @@
                         </span>
                         <div class="actions">
                             <a href="#" class="wishlist"><i class="far fa-heart"></i></a>
-                            <a href="#" class="view"><i class="fas fa-arrows-alt"></i></a>
+                            <a href="#" class="view" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fas fa-arrows-alt"></i></a>
                         </div>
                         <button title="Add To Cart" class=" add-to-cart">Add
                             To Cart
@@ -906,7 +909,7 @@
                         </span>
                         <div class="actions">
                             <a href="#" class="wishlist"><i class="far fa-heart"></i></a>
-                            <a href="#" class="view"><i class="fas fa-arrows-alt"></i></a>
+                            <a href="#" class="view" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fas fa-arrows-alt"></i></a>
                         </div>
                         <button title="Add To Cart" class=" add-to-cart">Add
                             To Cart
@@ -932,7 +935,7 @@
                         </span>
                         <div class="actions">
                             <a href="#" class="wishlist"><i class="far fa-heart"></i></a>
-                            <a href="#" class="view"><i class="fas fa-arrows-alt"></i></a>
+                            <a href="#" class="view" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fas fa-arrows-alt"></i></a>
                         </div>
                         <button title="Add To Cart" class=" add-to-cart">Add
                             To Cart
@@ -958,7 +961,7 @@
                         </span>
                         <div class="actions">
                             <a href="#" class="wishlist"><i class="far fa-heart"></i></a>
-                            <a href="#" class="view"><i class="fas fa-arrows-alt"></i></a>
+                            <a href="#" class="view" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fas fa-arrows-alt"></i></a>
                         </div>
                         <button title="Add To Cart" class=" add-to-cart">Add
                             To Cart
@@ -984,7 +987,7 @@
                         </span>
                         <div class="actions">
                             <a href="#" class="wishlist"><i class="far fa-heart"></i></a>
-                            <a href="#" class="view"><i class="fas fa-arrows-alt"></i></a>
+                            <a href="#" class="view" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fas fa-arrows-alt"></i></a>
                         </div>
                         <button title="Add To Cart" class=" add-to-cart">Add
                             To Cart
@@ -1138,9 +1141,8 @@
                             <span class="logotitle">Badam Azerbaijan</span>
 
                         </div>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit distinctio adipisci voluptatem
-                            quos
-                            dignissimos </p>
+                        <p>Badam Azerbaijan online alış-verişin məkanı.Alış-veriş etmək çox asandır.100% təbii məhsullar
+                        </p>
                     </div>
                     <div class="social">
                         <a href="#"><i class="fab fa-facebook"></i></a>
