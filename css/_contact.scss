@@ -15,7 +15,7 @@
         border-radius: 8px;
         margin: 0px 2.5px 30px;
         padding: 60px 15px 60px;
-
+        height: 290px;
         &:hover {
             background-color: #007a58;
 
@@ -120,10 +120,13 @@
         border-radius: 10px;
         background: #fff;
 
-        iframe {
-            height: 474px;
-            border-radius: 8px;
-        }
+            img {
+                width: 100%;
+                object-fit: cover;
+                height: 474px;
+                border-radius: 8px;
+                filter: grayscale(.4);
+            }
     }
 
     .contact-form {

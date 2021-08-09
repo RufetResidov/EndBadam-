@@ -149,6 +149,37 @@
     .swiper-top {
         padding-bottom: 1rem;
 
+        .slick-next {
+            right: 2%;
+            &::after {
+                content: "\f105";
+            }
+        }
+
+        .slick-prev {
+            left:1%;
+            &::after {
+                content: "\f104";
+            }
+        }
+
+        .slick-prev,
+        .slick-next {
+            z-index: 10;
+            top: 50%;
+
+            &::before {
+                content: "";
+            }
+
+            &::after {
+                color: #fff;
+                font-family: "Font Awesome 5 Free";
+                font-weight: 700;
+                font-size: 55px;
+            }
+        }
+
         .swiper-slide {
             height: 400px;
 

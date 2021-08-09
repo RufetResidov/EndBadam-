@@ -1,7 +1,7 @@
 'use strict'
 //Input Value Total Price
 const total = document.getElementById("total")
-let azn= document.getElementById("total")
+let azn = document.getElementById("total")
 let qiymet = document.getElementById("qiymet")
 let topla;
 
@@ -9,9 +9,9 @@ function trackChange(value) {
     total.innerHTML = " ";
 
     topla = value * qiymet.value
-    total.innerHTML += topla+(" ₼")
+    total.innerHTML += topla + (" ₼")
 
- 
+
 }
 
 
@@ -279,7 +279,7 @@ $('.newProductSlider').slick({
 //Single Product//
 $('.swiper-top').slick({
     dots: false,
-    arrows: false,
+    arrows: true,
     speed: 300,
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -293,3 +293,55 @@ $('.swiper-bottom').slick({
     slidesToShow: 3,
     slidesToScroll: 2,
 });
+$('.swiper-offeryou').slick({
+    dots: false,
+    arrows: true,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 5,
+    slidesToScroll: 2,
+    responsive: [{
+            breakpoint: 992,
+            settings: {
+                arrows: true,
+                slidesToScroll: 2,
+                slidesToShow: 3,
+                dots: true
+
+            }
+        },
+        {
+            breakpoint: 768,
+            settings: {
+                arrows: false,
+                slidesToScroll: 2,
+                slidesToShow: 2,
+                dots: true
+            }
+        }
+    ]
+});
+
+$("#exampleModal").on("hidden.bs.modal", function () {
+  $("body").css("overflow-y","scroll")
+});
+
+//TopProduct//
+$('#tabs li a:not(:first)').addClass('inactive');
+$('#tab2').hide();
+$('#tab3').hide();
+$('#tabs li a').click(function(){
+    var t = $(this).attr('href');
+    $('#tabs li a').addClass('inactive');        
+    $(this).removeClass('inactive');
+    $('.topCategory').hide();
+    $(t).fadeIn('slow');
+    return false;
+})
+
+if($(this).hasClass('inactive')){ //this is the start of our condition 
+    $('#tabs li a').addClass('inactive');         
+    $(this).removeClass('inactive');
+    $('.topCategory').hide();
+    $(t).fadeIn('slow');    
+}

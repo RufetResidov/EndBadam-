@@ -245,23 +245,28 @@
             margin: 1rem 0;
 
             h2 {
-                font-size: 2rem;
+                font-size: 1.3rem;
                 margin: 0;
             }
 
             ul {
                 margin: 0;
+                justify-content: center !important;
 
                 li {
+                    margin: 0;
                     padding: 10px 0;
                     text-align: center;
+                    display: flex;
+
+                    a {
+                        width: max-content;
+                        font-size: 11px;
+                        margin: 6px;
+                    }
 
                     i {
                         display: block;
-                    }
-
-                    a {
-                        font-size: 9px;
                     }
                 }
             }
@@ -511,7 +516,8 @@
         padding: 3rem 0;
 
         .contact-card {
-
+            padding: 40px 15px 60px;
+            height: 220px;
             h4,
             p,
             a,
@@ -544,8 +550,8 @@
         .contact-map {
             padding: 15px;
 
-            iframe {
-                height: 350px;
+            img {
+                height: 300px;
             }
         }
 
@@ -787,6 +793,14 @@
         padding: 2rem 0;
 
         .swiper-top {
+
+            .slick-prev,
+            .slick-next {
+                &::after {
+                    font-size: 35px;
+                }
+            }
+
             .swiper-slide {
                 height: 200px;
 
@@ -1014,10 +1028,10 @@
     #topProduct {
         .topProductCategory {
             ul {
-                justify-content: space-between;
-
                 li {
-                    margin: auto 1.2rem;
+                    a {
+                        font-size: 13px;
+                    }
                 }
             }
         }
@@ -1034,10 +1048,6 @@
                             margin-bottom: 5px !important;
                         }
                     }
-                }
-
-                .content {
-                    height: 100px;
                 }
             }
         }

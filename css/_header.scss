@@ -33,9 +33,9 @@
                 font-weight: bold;
                 display: inline-block;
                 padding: 40px 14px;
-                text-transform: uppercase;
+                text-transform: capitalize;
                 color: #fff;
-                font-size: 14px;
+                font-size: 17px;
                 transition: 0.4s ease-in-out;
 
                 &:hover {
@@ -123,7 +123,7 @@
 
         .main-text {
             a {
-                font-size: 12px !important;
+                font-size: 15px !important;
             }
         }
     }
@@ -159,7 +159,7 @@
             color: #fff;
 
             i {
-                font-size: 1.5rem;
+                font-size: 22px;
             }
         }
 
@@ -500,20 +500,21 @@
         overflow-y: scroll;
         z-index: 390;
         padding: 0 10px;
+
         &::-webkit-scrollbar {
             width: 10px;
         }
-        
+
         /* Track */
         &::-webkit-scrollbar-track {
             background: #ff7004;
         }
-        
+
         /* Handle */
         &::-webkit-scrollbar-thumb {
             background: #3b6e60;
         }
-        
+
         /* Handle on hover */
         &::-webkit-scrollbar-thumb:hover {
             background: #007a58;
@@ -540,7 +541,7 @@
         transition: all linear .3s;
 
         .cart-header {
-            padding: 18px 25px;
+            padding: 20px 25px;
             text-align: center;
             position: relative;
             border-bottom: 1px solid #f5f6f7;
@@ -803,12 +804,17 @@
                 .cart-close {
                     z-index: 9999999;
 
-                    left: 50%;
-                    top: -12px;
+                    left: 5%;
+                    top: 12px;
                     bottom: inherit;
                     transform: translateX(-50%);
                     border-radius: 50px 50px 0px 0px;
-                    box-shadow: 0px -8px 10px 0px rgba(0, 0, 0, 0.15)
+
+                    i {
+                        width: 30px;
+                        height: 30px;
+                        line-height: 30px;
+                    }
                 }
             }
 
@@ -989,12 +995,43 @@
             .swiper-top {
                 padding-bottom: 1rem;
 
+                .slick-next {
+                    right: 0;
+                    &::after {
+                        content: "\f105";
+                    }
+                }
+
+                .slick-prev {
+                    left: 0;
+                    &::after {
+                        content: "\f104";
+                    }
+                }
+
+                .slick-prev,
+                .slick-next {
+                    z-index: 10;
+                    top: 50%;
+
+                    &::before {
+                        content: "";
+                    }
+
+                    &::after {
+                        color: #007a58;
+                        font-family: "Font Awesome 5 Free";
+                        font-weight: 700;
+                        font-size: 30px;
+                    }
+                }
+
                 .swiper-slide {
-                    height: 400px;
+                    height: 300px;
 
                     img {
                         width: 100%;
-                        height: 400px;
+                        height: 300px;
                         object-fit: cover;
                     }
                 }

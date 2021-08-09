@@ -28,9 +28,10 @@
             }
 
             .span1 {
+                font-family: 'Kanit', sans-serif;
+
                 position: relative;
                 font-weight: 800;
-                font-family: "Montserrat", sans-serif;
                 z-index: 5;
                 color: #fff;
 
@@ -40,7 +41,7 @@
                     bottom: 3px;
                     width: 95%;
                     left: 0;
-                    background: rgba(255, 255, 255, 0.15);
+                    background: rgba(255, 255, 255, 0.2);
                     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
                     border: 1px solid rgba(255, 255, 255, 0.18);
                     height: 28px;
@@ -53,6 +54,8 @@
                 font-weight: 500;
                 font-size: 56px;
                 line-height: 56px;
+                font-family: 'Kanit', sans-serif;
+
             }
 
             a {
@@ -129,11 +132,11 @@
     border-bottom: 1px solid #007a58;
 
     .title {
-        padding: 2rem 0;
-
+        padding: 1rem 0;
         h2 {
             color: #007a58;
-            font-size: 3rem
+            font-size: 2.4rem;
+            font-style: italic;
         }
     }
 
@@ -144,7 +147,6 @@
         p {
             color: #007a58;
             font-size: 1.1rem;
-            font-weight: 500;
         }
 
         img {
@@ -153,9 +155,84 @@
             border-radius: 100%;
             border: 2px solid #007a58;
             width: 100%;
+        }
+    }
 
-            &:hover {
-                transform: rotate(30deg);
+    .swiper-offeryou {
+        .slick-next {
+            &::after {
+                content: "\f105";
+            }
+        }
+
+        .slick-prev {
+            &::after {
+                content: "\f104";
+            }
+        }
+
+        .slick-prev,
+        .slick-next {
+            z-index: 10;
+            top: 40%;
+
+            &::before {
+                content: "";
+            }
+
+            &::after {
+                color: #007a58;
+                font-family: "Font Awesome 5 Free";
+                font-weight: 700;
+                font-size: 35px;
+            }
+        }
+
+        .slick-dots {
+            li {
+                margin: 0 12px;
+            }
+
+            position: absolute;
+            bottom: -1rem;
+
+            li button:before,
+            li.slick-active button:before {
+                color: transparent;
+                opacity: 1;
+            }
+
+            li button:before {
+                background-color: #007a58;
+                border: 1px solid #007a58;
+                display: inline-block;
+                border-radius: 10px;
+                height: 3px;
+                width: 35px;
+            }
+
+            li.slick-active button:before {
+                border: 1px solid #ff7004;
+                background-color: #ff7004;
+            }
+        }
+
+        .swiper-slide {
+
+            text-align: center;
+
+            img {
+                object-fit: cover;
+                width: 100%;
+                height: 140px;
+                border: 2px solid #007a58;
+            }
+
+            p {
+                margin-top: 5px;
+                color: #007a58;
+                font-size: 1rem;
+                font-weight: 500;
             }
         }
     }
@@ -164,38 +241,52 @@
 
 /*Top Product*/
 #topProduct {
-    padding: 1rem 0;
+    padding: 5px 0;
     text-align: center;
+    overflow: hidden;
+
     .topProductCategory {
-        h2 {
-            margin: 1rem 0;
-            color: #007a58;
-            font-size: 2.5rem
-        }
 
         margin: 2rem 0;
-        padding: 10px 0;
+        padding: 5px 0;
         background-color: #eaeef1;
         border-radius: 10px;
 
-        li {
-            margin: auto 2rem;
+        h2 {
+            margin: 5px 0;
             color: #007a58;
+            font-size: 2rem;
+            font-style: italic;
+        }
 
-            &:hover {
-                transition: 0.4s;
+        ul {
+            display: flex;
+            justify-content: center;
 
+            li {
                 a {
-                    color: #ff7004;
+                    font-family: 'Kanit', sans-serif;
+                    margin: auto 2rem;
+                    color: #007a58;
+                    background-color: transparent;
+                    font-size: 1.2rem;
+                    box-shadow: none;
+
+                    i {
+                        margin-right: 5px;
+                    }
+
+                    &:hover {
+                        transition: 0.4s;
+                        color: #ff7004;
+                    }
                 }
 
-                color: #ff7004;
-            }
+                &::after {
+                    content: none;
+                }
 
-            a {
-                font-weight: 600;
-                font-size: 1.2rem;
-                margin-left: 5px;
+
             }
         }
     }
@@ -419,6 +510,8 @@
         border-radius: 8px;
 
         h2 {
+            font-style: italic;
+            font-family: 'Kanit', sans-serif;
             color: #007a58;
         }
 
@@ -474,7 +567,9 @@
                         transition: 0.4s ease-in-out;
                     }
                 }
-
+                img{
+                    opacity: 0;
+                }
                 .hover-image {
                     opacity: 1;
                     transition: 0.5s;
@@ -497,14 +592,16 @@
                 width: 100%;
                 height: 5px;
                 bottom: -4px;
-                background-color:#007a58;
+                background-color: #007a58;
                 left: 0px;
                 transition: all 0.4s ease-in-out;
             }
 
             img {
+                object-fit: cover;
                 height: 240px;
                 width: 100%;
+                opacity: 1;
             }
 
             .hover-image {
@@ -545,7 +642,7 @@
                 left: 50%;
                 transform: translateX(-50%);
                 width: 75%;
-                height: 55px;
+                height: 45px;
                 background-color: #fff;
                 text-align: center;
                 border-radius: 10px;
@@ -625,6 +722,7 @@
         text-align: center;
         padding: 1rem 0;
         border-radius: 10px;
+
 
         p {
             font-style: italic;
