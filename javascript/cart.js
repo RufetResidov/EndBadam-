@@ -57,13 +57,6 @@ addToCartButtonsDOM.forEach(addToCartButtonDOM => {
       price: productDOM.querySelector('.product__price').innerText,
       quantity: 1,
     };
-    Swal.fire({
-      position: 'center',
-      icon: 'success',
-      title: 'Məhsul səbətə əlavə olundu',
-      showConfirmButton: false,
-      timer: 1500
-    })
 
     const isInCart = (cart.filter(cartItem => (cartItem.name === product.name)).length > 0);
 
@@ -72,6 +65,14 @@ addToCartButtonsDOM.forEach(addToCartButtonDOM => {
       cart.push(product);
       localStorage.setItem('cart', JSON.stringify(cart));
       handleActionButtons(addToCartButtonDOM, product);
+      Swal.fire({
+        position: 'center',
+        icon: 'success',
+        title: 'Məhsul səbətə əlavə olundu',
+        showConfirmButton: false,
+        timer: 1500
+      })
+
     }
   });
 });
