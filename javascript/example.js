@@ -1,39 +1,46 @@
 'use strict'
-//Input Value Total Price
-const total = document.getElementById("total")
-let azn = document.getElementById("total")
-let qiymet = document.getElementById("qiymet")
-let topla;
+//Animation OnlOad
+$(window).on('load', function () {
+    setTimeout(function () {
+        $(".loadImg").hide()
+        $("body").css("overflow-y", "scroll")
+    }, 300);
+});
+//Animation OnlOad
 
-function trackChange(value) {
-    total.innerHTML = " ";
-
-    topla = value * qiymet.value
-    total.innerHTML += topla + (" ₼")
-
-
-}
-
-
-//Plus Minus//
-$(function () {
-    $('.increment').click(function () {
-        var valueElement = $('#' + $(this).siblings('input').attr('id'));
-
-        if ($(this).hasClass('plus')) {
-            valueElement.val(Math.max(parseInt(valueElement.val()) + 1));
-        } else if (valueElement.val() > 0) // Stops the value going into negatives
-        {
-            valueElement.val(Math.max(parseInt(valueElement.val()) - 1));
-        }
-
-        return false;
-    });
+//ScrollUp
+var btn = $('#scrollUp');
+$(window).scroll(function () {
+    if ($(window).scrollTop() > 300) {
+        btn.addClass('show');
+    } else {
+        btn.removeClass('show');
+    }
 
 });
-//Plus Minus//
+btn.on('click', function (e) {
+    e.preventDefault();
+    $('html, body').animate({
+        scrollTop: 0
+    }, '300');
+});
+//EndScrollUp
 ////////////////////////////////////////
-//Input Value Total Price
+//ScrollHeader
+$(document).ready(function () {
+    $(window).scroll(function () {
+        if ($(window).scrollTop() > 100) {
+            $('#header').addClass('headeractive');
+        } else {
+            $('#header').removeClass('headeractive');
+
+        }
+    })
+})
+////////////////////////////////////////
+$("#exampleModal").on("hidden.bs.modal", function () {
+    $("body").css("overflow-y", "scroll")
+});
 
 //MobileHeader
 $(".cate-btn").click(function (event) {
@@ -68,15 +75,35 @@ $(document).ready(function () {
     });
 });
 //MobileHeader
+//SLIDER
+$('.slider').slick();
+////////////////////////////////////////
 
-//Animation OnlOad
-$(window).on('load', function () {
-    setTimeout(function () {
-        $(".loadImg").hide()
-        $("body").css("overflow-y", "scroll")
-    }, 300);
-});
-//Animation OnlOad
+
+
+
+// //Plus Minus//
+// $(function () {
+//     $('.increment').click(function () {
+//         var valueElement = $('#' + $(this).siblings('input').attr('id'));
+
+//         if ($(this).hasClass('plus')) {
+//             valueElement.val(Math.max(parseInt(valueElement.val()) + 1));
+//         } else if (valueElement.val() > 0) // Stops the value going into negatives
+//         {
+//             valueElement.val(Math.max(parseInt(valueElement.val()) - 1));
+//         }
+
+//         return false;
+//     });
+
+// });
+//Plus Minus//
+////////////////////////////////////////
+//Input Value Total Price
+
+
+
 
 // $(document).click(function () {
 //     if ($(".mobile-nav").is(":visible")) {
@@ -84,37 +111,9 @@ $(window).on('load', function () {
 //     }
 // });
 
-//ScrollHeader
-$(document).ready(function () {
-    $(window).scroll(function () {
-        if ($(window).scrollTop() > 100) {
-            $('#header').addClass('headeractive');
-        } else {
-            $('#header').removeClass('headeractive');
 
-        }
-    })
-})
-////////////////////////////////////////
 
-//ScrollUp
-var btn = $('#scrollUp');
-$(window).scroll(function () {
-    if ($(window).scrollTop() > 300) {
-        btn.addClass('show');
-    } else {
-        btn.removeClass('show');
-    }
 
-});
-btn.on('click', function (e) {
-    e.preventDefault();
-    $('html, body').animate({
-        scrollTop: 0
-    }, '300');
-});
-//EndScrollUp
-////////////////////////////////////////
 
 
 //Start IndexCount 
@@ -145,9 +144,6 @@ $(document).ready(function () {
             })
         }
     })
-
-})
-$(document).ready(function () {
     $(window).scroll(function () {
         if ($(this).scrollTop() > 150) {
             $('.counterr').each(function () {
@@ -176,10 +172,6 @@ $(document).ready(function () {
     })
 
 })
-//SLIDER
-$('.slider').slick();
-//End IndexCount 
-////////////////////////////////////////
 
 
 
@@ -322,26 +314,24 @@ $('.swiper-offeryou').slick({
     ]
 });
 
-$("#exampleModal").on("hidden.bs.modal", function () {
-  $("body").css("overflow-y","scroll")
-});
 
 //TopProduct//
 $('#tabs li a:not(:first)').addClass('inactive');
 $('#tab2').hide();
 $('#tab3').hide();
-$('#tabs li a').click(function(){
+$('#tabs li a').click(function () {
     var t = $(this).attr('href');
-    $('#tabs li a').addClass('inactive');        
+    $('#tabs li a').addClass('inactive');
     $(this).removeClass('inactive');
     $('.topCategory').hide();
     $(t).fadeIn('slow');
     return false;
 })
 
-if($(this).hasClass('inactive')){ //this is the start of our condition 
-    $('#tabs li a').addClass('inactive');         
+if ($(this).hasClass('inactive')) { //this is the start of our condition 
+    $('#tabs li a').addClass('inactive');
     $(this).removeClass('inactive');
     $('.topCategory').hide();
-    $(t).fadeIn('slow');    
+    $(t).fadeIn('slow');
 }
+
