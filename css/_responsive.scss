@@ -1,9 +1,30 @@
+@media(min-width:321px)and(max-width:375px) {
+    .slider {
+        .image-slider {
+            img {
+                height: 75vh !important;
+            }
+        }
+    }
+}
+
 @media(max-width:576px) {
     #footer {
         .footer-bottom {
             .footer-copytext {
                 font-size: 16px !important;
             }
+        }
+    }
+
+    #scrollUp {
+        width: 40px !important;
+        height: 40px !important;
+        right: 7px !important;
+        bottom: 48px !important;
+
+        &::after {
+            font-size: 25px !important;
         }
     }
 
@@ -80,12 +101,11 @@
 
     //Index Section//
     .slider {
-
         .slick-prev,
         .slick-next {
             &::after {
                 margin-left: 0.25rem !important;
-                font-size: 2rem !important;
+                font-size: 1.5rem !important;
             }
         }
 
@@ -109,14 +129,14 @@
             span {
                 color: #fff;
                 font-weight: 500;
-                font-size: 2rem !important;
+                font-size: 1.8rem !important;
                 line-height: 40px !important;
             }
 
             a {
-                padding: 15px !important;
+                padding: 12px !important;
                 line-height: 20px !important;
-                font-size: 1rem !important;
+                font-size: 14px !important;
                 border-radius: 10px !important;
             }
         }
@@ -518,6 +538,7 @@
         .contact-card {
             padding: 40px 15px 60px;
             height: 220px;
+
             h4,
             p,
             a,
@@ -1004,17 +1025,19 @@
     }
 
     #scrollUp {
-        width: 50px !important;
-        height: 50px !important;
-        right: 5px !important;
-        bottom: 55px !important;
+        width: 50px ;
+        height: 50px ;
+        right: 5px ;
+        bottom: 55px ;
 
         &::after {
-            font-size: 30px !important;
+            font-size: 30px ;
         }
     }
 
     .slider {
+
+
         .slider-text {
             left: 50% !important;
 
