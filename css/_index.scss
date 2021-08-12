@@ -133,7 +133,6 @@
 
     .title {
         padding: 1rem 0;
-
         h2 {
             color: #007a58;
             font-size: 2.4rem;
@@ -568,11 +567,9 @@
                         transition: 0.4s ease-in-out;
                     }
                 }
-
-                img {
+                img{
                     opacity: 0;
                 }
-
                 .hover-image {
                     opacity: 1;
                     transition: 0.5s;
@@ -704,13 +701,7 @@
             border-bottom-right-radius: 8px;
             border-bottom-left-radius: 8px;
             border: 1px solid #007a58;
-            border-top: 1px solid transparent !important;
-
-            .price {
-                span {
-                    font-weight: 500;
-                }
-            }
+            border-top: 1px solid transparent;
 
             a {
                 font-size: 1rem;
@@ -724,6 +715,7 @@
 /*Blog*/
 #blog {
     padding-bottom: 2rem;
+    border-top: 1px solid #007a58;
 
     .blogText {
         background-color: #f5f6f7;

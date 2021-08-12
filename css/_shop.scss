@@ -4,7 +4,7 @@
 
 /*Top Product*/
 .shop-category-area {
-    padding: 6rem 0 1rem 0;
+    padding: 8rem 0 1rem 0;
     text-align: center;
 
     .shop-bottom-area {
@@ -181,11 +181,9 @@
                 transition: all 0.3s ease 0s;
                 text-align: center;
                 background-color: #fff;
-                font-size: 1rem;
-                span{
-                    font-weight: 600;
-                }
+
                 a {
+                    font-size: 1rem;
                     color: #007a58;
                 }
             }
@@ -302,6 +300,7 @@
         .sidebar-widget-group {
             h3 {
                 font-size: 1.3rem;
+                text-transform: uppercase;
                 font-weight: 600;
                 letter-spacing: 1.2px;
                 padding-bottom: 10px;
@@ -320,116 +319,12 @@
                 }
             }
 
-            .filter-price {
-                width: 220px;
-                padding: 2rem 0 ;
-                .price-field {
-                    position: relative;
-                    width: 100%;
-                    height: 56px;
-                    box-sizing: border-box;
-                    border-radius: 5px;
-
-                    input[type=range] {
-                        position: absolute;
-                        width: 200px;
-                        height: 4px;
-                        border: 0;
-                        outline: 0;
-                        box-sizing: border-box;
-                        border-radius: 5px;
-                        pointer-events: none;
-                        -webkit-appearance: none;
-                    }
-
-                    input[type=range]::-ms-track {
-                        width: 188px;
-                        height: 4px;
-                        border: 0;
-                        outline: 0;
-                        box-sizing: border-box;
-                        border-radius: 5px;
-                        pointer-events: none;
-                        background: red;
-                        border-color: transparent;
-                        color: red;
-                        border-radius: 5px;
-
-                    }
-
-                    input[type=range]::-webkit-slider-thumb {
-                        /* WebKit/Blink */
-                        position: relative;
-                        -webkit-appearance: none;
-                        margin: 0;
-                        border: 0;
-                        outline: 0;
-                        border-radius: 50%;
-                        height: 15px;
-                        width: 15px;
-                        margin-top: -5px;
-                        cursor: pointer;
-                        cursor: pointer;
-                        pointer-events: all;
-                        background: #007a58;
-                        z-index: 100;
-                    }
-
-                    input[type=range]::-webkit-slider-runnable-track {
-                        background-color: #007a58;
-                        width: 188px;
-                        height: 4px;
-                        cursor: pointer;
-                        border-radius: 5px;
-                    }
-
-                }
-
-                .price-wrap {
-                    display: flex;
-                    justify-content: center;
-                    font-size: 1.2rem;
-                    line-height: 1.2em;
-                    font-weight: 500;
-                    margin-left: -1rem;
-                    .price-wrap label {
-                        text-align: right;
-                    }
-
-                    .price-wrap-1,
-                    .price-wrap-2 {
-                        display: flex;
-                        color: #000;
-                    }
-
-                    .price-title {
-                        margin-right: 5px;
-                        color: #007a58;
-                        font-weight: 500;
-                        font-size: 1.2rem;
-                    }
-
-                    .price-wrap_line {
-                        margin: 0 10px;
-                    }
-                }
-
-                .price-wrap #one,
-                .price-wrap #two {
-                    color: #000;
-                    width: 35px;
-                    text-align: right;
-                    margin-right: 2px;
-                    padding: 0;
-                    background: none;
-                    border: none;
-                    outline: none;
-                    font-size: 1.2rem;
-                    line-height: 1.2em;
-                    font-weight: 500;
-                }
+            h4 {
+                font-size: 15px;
+                letter-spacing: 1.2px;
+                display: block;
+                text-transform: capitalize !important;
             }
-
         }
     }
 }

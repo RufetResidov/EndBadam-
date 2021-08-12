@@ -16,7 +16,7 @@
             font-weight: 600;
         }
 
-        .price {
+        .product-price {
             font-size: 1.5rem;
             font-weight: 600;
         }
@@ -337,7 +337,7 @@
                 left: 50%;
                 transform: translateX(-50%);
                 width: 75%;
-                height: 45px;
+                height: 55px;
                 background-color: #fff;
                 text-align: center;
                 border-radius: 10px;
@@ -396,7 +396,7 @@
             border-bottom-right-radius: 8px;
             border-bottom-left-radius: 8px;
             border: 1px solid #007a58;
-            border-top: 1px solid transparent !important;
+            border-top: 1px solid transparent;
 
             a {
                 font-size: 1rem;
