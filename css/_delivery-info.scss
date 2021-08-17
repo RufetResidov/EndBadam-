@@ -12,11 +12,6 @@
     .box {
         padding: 5px;
 
-        i {
-            font-size: 2.5rem;
-            color: #007a58;
-        }
-
         h4,
         p {
             margin: 0;
@@ -34,6 +29,8 @@
     background-color: #fff;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    border-top: #007a58 1px solid;
+    border-bottom: #007a58 1px solid;
     padding: 2rem;
     margin-top: -6px;
     border-top: #007a58 1px solid;

@@ -1,6 +1,3 @@
-#single-list {
-    background-image: url(..//photo/contactback.jpg);
-}
 
 /*Top Product*/
 .shop-category-area {
@@ -275,7 +272,9 @@
                     }
                 }
             }
-
+            .sidebar-widget-category li a.active{
+                color: #ff7004;
+            }
             .sidebar-widget-category {
                 ul {
                     padding: 0;

@@ -1,3 +1,4 @@
+'use strict';
 //Shop-Basket
 $(".shop-icon").on("click", function () {
   $('.cart-sidebar').addClass('active'),
@@ -11,13 +12,6 @@ $('.cart-close').on("click", function () {
     $('.off_canvars_overlay').removeClass('active')
 
 });
-
-// $(".cart-delete").click(function () {
-//   $(".cart-list").remove();
-//   console.log("Hello")
-// })
-
-
 $(".action-plus").on("click", (function () {
   var e = $(this).closest(".product-action").children(".action-input").get(0).value++,
     i = $(this).closest(".product-action").children(".action-minus");
@@ -27,7 +21,6 @@ $(".action-plus").on("click", (function () {
 }))
 
 
-'use strict';
 
 let cart = (JSON.parse(localStorage.getItem('cart')) || []);
 const cartDOM = document.querySelector('.shopping-cart .myCart .cart-list');

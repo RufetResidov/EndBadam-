@@ -79,43 +79,6 @@ $(document).ready(function () {
 $('.slider').slick();
 ////////////////////////////////////////
 
-
-
-
-// //Plus Minus//
-// $(function () {
-//     $('.increment').click(function () {
-//         var valueElement = $('#' + $(this).siblings('input').attr('id'));
-
-//         if ($(this).hasClass('plus')) {
-//             valueElement.val(Math.max(parseInt(valueElement.val()) + 1));
-//         } else if (valueElement.val() > 0) // Stops the value going into negatives
-//         {
-//             valueElement.val(Math.max(parseInt(valueElement.val()) - 1));
-//         }
-
-//         return false;
-//     });
-
-// });
-//Plus Minus//
-////////////////////////////////////////
-//Input Value Total Price
-
-
-
-
-// $(document).click(function () {
-//     if ($(".mobile-nav").is(":visible")) {
-//         $(".mobile-nav").fadeOut();
-//     }
-// });
-
-
-
-
-
-
 //Start IndexCount 
 $(document).ready(function () {
     $(window).scroll(function () {
@@ -172,9 +135,6 @@ $(document).ready(function () {
     })
 
 })
-
-
-
 ////////////////Slick-Slider///////////////////////
 $('.singleProductSlider').slick({
     dots: true,
@@ -313,8 +273,6 @@ $('.swiper-offeryou').slick({
         }
     ]
 });
-
-
 //TopProduct//
 $('#tabs li a:not(:first)').addClass('inactive');
 $('#tab2').hide();
