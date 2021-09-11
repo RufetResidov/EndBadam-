@@ -227,6 +227,7 @@
                 justify-content: center;
                 align-items: center;
                 margin: 0;
+                background-color: transparent;
 
                 .fa-search {
                     font-size: 24px;
@@ -237,9 +238,9 @@
             .search-input {
                 border: none;
                 background: none;
+                padding: 10px 20px;
                 outline: none;
                 float: left;
-                padding: 0 20px;
                 color: #000;
                 width: 230px;
             }
@@ -266,6 +267,7 @@
 
             .dropdown-menu {
                 background-color: #fff;
+                
 
                 :focus {
                     background-color: transparent;
@@ -287,6 +289,42 @@
 }
 
 #mobile-header {
+    .dropdownUserMobile {
+        margin-left: 15px;
+        z-index: 100;
+
+        :focus {
+            outline: 0;
+            box-shadow: none;
+        }
+
+        .dropdown-toggle {
+            padding: 0;
+
+            &::after {
+                border: none;
+            }
+        }
+
+        .dropdown-menu {
+            background-color: #fff;
+
+            :focus {
+                background-color: transparent;
+            }
+
+            li {
+                overflow: hidden;
+
+                a {
+                    margin: auto;
+                    color: #007a58;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+
     display: none;
     background-color: #084030;
     position: fixed;
@@ -343,7 +381,7 @@
     background-color: #ff7004;
     color: #fff;
     right: 20px;
-    bottom: 10px;
+    bottom: 85px;
     text-align: center;
     overflow: hidden;
     border-radius: 50px;
@@ -415,6 +453,7 @@
                 align-items: center;
                 transition: 2s;
                 margin: 0;
+                background-color: transparent;
 
                 .fa-search {
                     font-size: 20px;
@@ -427,11 +466,10 @@
                 background: none;
                 outline: none;
                 float: left;
-                padding: 0 20px;
                 color: #000;
                 font-size: 1rem;
                 transition: 0.4s;
-                line-height: 50px;
+                padding: 10px 20px;
                 width: 180px;
             }
         }
@@ -500,7 +538,8 @@
         justify-content: center;
 
         a {
-            margin:0 10px ;
+            margin: 0 10px;
+
             i {
                 padding: 10px;
                 font-size: 18px;

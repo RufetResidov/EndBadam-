@@ -7,7 +7,13 @@ $(window).on('load', function () {
     }, 300);
 });
 //Animation OnlOad
-
+jQuery(document).ready((function (e) {
+    var i = e(".faq-ans").hide();
+    i.first().show(), e(".faq-que").click((function () {
+        var n = e(this);
+        i.slideUp(), n.next().slideDown()
+    }))
+}));
 //ScrollUp
 var btn = $('#scrollUp');
 $(window).scroll(function () {
@@ -292,4 +298,3 @@ if ($(this).hasClass('inactive')) { //this is the start of our condition
     $('.topCategory').hide();
     $(t).fadeIn('slow');
 }
-

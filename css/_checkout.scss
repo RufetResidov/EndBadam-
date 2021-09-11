@@ -1,6 +1,7 @@
 #checkout-item {
     padding: 20px;
     border-bottom: 1px solid #007a58;
+
     .single-content-info {
         border: 1px solid #26415d4d;
         padding: 30px;
@@ -124,9 +125,19 @@
 
                 tbody {
                     tr {
+
                         td {
+                            position: relative;
                             padding: 10px;
                             border: 1px solid #26415d4d;
+
+                            i {
+                                cursor: pointer;
+                                position: absolute;
+                                top: 35%;
+                                right: 10px;
+                                font-size: 14px;
+                            }
                         }
                     }
                 }
@@ -164,4 +175,31 @@
 
 #single-list {
     background-image: url(..//photo/contactback.jpg);
+}
+
+.empty-cart-area {
+    border-top: 1px solid #007a58;
+    border-bottom: 1px solid #007a58;
+    padding: 4rem 0;
+
+        color: #007a58;
+    .empty-text-contant{
+        h2{
+            margin-top: 1rem;
+        }
+        i{
+            color: #F17109;
+            font-size: 2.5rem;
+        }
+        a{
+            font-size: 1.3rem;
+            color: #F17109;
+            font-weight: 500;
+
+            i{
+                font-size: 15px;
+                margin-left: 5px;
+            }
+        }
+    }
 }

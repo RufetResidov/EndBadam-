@@ -1,0 +1,6 @@
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/l/font?kit=o-0IIpQlx3QUlC5A4PNb5yaqYdylz0tGGZa53YDRk32MBxxPuBQAdshl8G3J8V5n8fPvtNjRKVAkoM2iUP3rvtHXuy8uMtsJx_GViZGdkI5_QNYFpKvurWzxVW4lzmpbryLC4HfZgvtXSr9lZMiYruR1NyPxFM6517xCU_IQ4B2bscEQdsd3reyqWQCB4M20JFcFE7LaeFu2-Vjk0qSLfUZi9QaZgSjtB7_aGOL8tURd6gzOtmx_8iEKXnlD-4aPdbfaF4TUGDztPGvPNQrbYg5Xz5PJ_bxDWGTVB_rAoBwIvd2Lb_5LuQbYwW_2dWYcQq43A-ouXTIsrP9XWqTFMmLfmlWmBvk5haa5yjBolwEbFAlic8SiODqd19MvRtbGMgZ7bYN5MAWNKi3fT3Lmo9BAEhdKscu-mzAXkG8q4HIoX_4KNlYcL6SXtcxjdOhkbKV_ftOb900QcbhoOpUcl-5EQdaLSlCWAku552emTcckjrqLveO381h8YKPPy9Un6Kk&skey=2b960fe17823056f&v=v14) format('woff2');
+}

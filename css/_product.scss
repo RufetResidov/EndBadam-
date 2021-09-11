@@ -217,7 +217,6 @@
             .main-heading {
                 h3 {
                     font-size: 1.3rem;
-                    text-transform: uppercase;
                     font-weight: 600;
                     letter-spacing: 1.2px;
                     padding-bottom: 15px;
@@ -237,7 +236,9 @@
                     }
                 }
             }
-
+            .sidebar-widget-category li a.active{
+                color: #ff7004;
+            }
             .sidebar-widget-category {
                 ul {
                     padding: 0;
